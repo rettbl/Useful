@@ -1,16 +1,16 @@
-#Useful
+# Useful
 
 [TOC]
 
 > Le but de ce document est de regrouper les différents informations à propos de l'IT dans un seul répository accessible de partout
 
-##CTF
+## CTF
 
-###Tools
+### Tools
 
 - https://github.com/vavkamil/awesome-bugbounty-tools
 
-##Linux
+## Linux
 
 - Monter USB --> mount /dev/usbNAME /media/usb
   - Trouver sa clé USB --> sudo blkid
@@ -23,13 +23,13 @@
 - lastb --> dernière connexion qui à échoué
 
 
-##Malware
+## Malware
 
 ### Tools
 
 - Virus Total
 
-###Windows 
+### Windows 
 
 - ECHO@OFF start (mettre le fichier en .bat)
 
