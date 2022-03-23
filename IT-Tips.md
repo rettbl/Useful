@@ -8,6 +8,8 @@
 
 - https://github.com/vavkamil/awesome-bugbounty-tools
 
+### Tips
+
 - ' or 1=1- - --> Bypass authentification web
 
 ## Linux
@@ -15,13 +17,15 @@
 - Monter USB --> mount /dev/usbNAME /media/usb
   - Trouver sa clé USB --> sudo blkid
   
-- Monter server python --> python3 -m http.server 555 --bind 192.168.1.1
+- Monter serveur python --> python3 -m http.server 555 --bind 192.168.1.1
    - Croc --> Envoyer des fichiers entre 2 PC
 
 - #kali-undercover --> transforme le GUI en Windows
 
 - last --> dernière connexion
 - lastb --> dernière connexion qui à échoué
+
+- find / -name XXX --> trouver un fichier dans le système
 
 
 ## Malware
