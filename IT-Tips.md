@@ -8,6 +8,8 @@
 
 - https://github.com/vavkamil/awesome-bugbounty-tools
 
+- ' or 1=1- - --> Bypass authentification web
+
 ## Linux
 
 - Monter USB --> mount /dev/usbNAME /media/usb
@@ -48,6 +50,10 @@
 
 - MVT --> analyse de téléphone
 
+- Medicat --> Fait sauter les mots de passe
+
+- Kon Boot --> Supprime le mot de passe à la volée
+
 ## OSINT
 
 - Script G-Hunt --> Rassemble les informations à partir d'une adresse mail google
@@ -69,3 +75,25 @@
 - Auto Archiver
 
 - Redo Rescue
+
+## Windows 
+  
+- Dir C:\*.ova /S | more --> Recherche dans le système un fichier .ova
+
+- Netstat -anpe --> Tout les flux actifs actutellement
+
+- TronScript --> Evalue le PC et remonte les problèmes
+
+- Powercfg /batteryreport --> Sort un rapport sur l'état de la batterie
+
+- ipconfig /displaydns | find porn --> voir les recherches DNS
+
+## Other
+
+- Barrier --> permet d'avoir plusieurs PC sur 1 PC
+
+- Locust --> Test de montée en charge
+
+- DroidCam --> Transforme le téléphone en Webcam
+
+- Automata --> Automatise des tâches Web
