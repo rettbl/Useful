@@ -82,7 +82,7 @@
 
 ## Windows 
   
-- Dir C:\*.ova /S | more --> Recherche dans le système un fichier .ova
+- dir C:\*.ova /S | more --> Recherche dans le système un fichier .ova
 
 - Netstat -anpe --> Tout les flux actifs actutellement
 
