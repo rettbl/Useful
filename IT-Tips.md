@@ -6,7 +6,8 @@
 
 ### Tools
 
-- https://github.com/vavkamil/awesome-bugbounty-tools
+- https://github.com/vavkamil/awesome-bugbounty-tools (regroupe les tools CTF)
+- https://gtfobins.github.io/ (liste de binaires vulnérables avec POC)
 
 ### Tips
 
