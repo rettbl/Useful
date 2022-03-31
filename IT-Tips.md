@@ -7,7 +7,6 @@
 ### Tools
 
 - https://github.com/vavkamil/awesome-bugbounty-tools (regroupe les tools CTF)
-- https://gtfobins.github.io/ (liste de binaires vulnérables avec POC)
 
 ### Tips
 
@@ -38,6 +37,11 @@
 - MRT --> Analyse PC
 
 - HOIC --> Attaque DDOS
+
+- https://gtfobins.github.io/ (liste de binaires vulnérables avec POC)
+
+- https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads (liste payloads pour attaque via USB)
+
 
 ### Windows 
 
