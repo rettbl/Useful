@@ -85,6 +85,8 @@
 
 - Redo Rescue
 
+- MeeroDrop --> Transfert de fichier jusqu'à 20 Go
+
 ## Windows 
   
 - dir C:\*.ova /S | more --> Recherche dans le système un fichier .ova
