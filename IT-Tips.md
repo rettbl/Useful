@@ -27,6 +27,8 @@
 
 - find / -name XXX --> trouver un fichier dans le système
 
+- lastlog --> Voir les différents comptes et leurs dernières connexions
+
 
 ## Malware
 
