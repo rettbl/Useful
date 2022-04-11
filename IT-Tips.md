@@ -79,6 +79,8 @@
 
 - Deface --> Flouter des visages
 
+- Polarr --> Outil de retouche en ligne
+
 ## Backup
 
 - Pika Backup
