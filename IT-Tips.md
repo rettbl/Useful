@@ -81,6 +81,8 @@
 
 - Polarr --> Outil de retouche en ligne
 
+- https://29a.ch/photo-forensics --> Analyse de photo forensics
+
 ## Backup
 
 - Pika Backup
