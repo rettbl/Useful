@@ -36,13 +36,17 @@
 
 - Virus Total --> étudier un fichier
 
-- MRT --> Analyse PC
+- MRT --> Analyse PC (application au sein de Windows)
 
 - HOIC --> Attaque DDOS
 
 - https://gtfobins.github.io/ (liste de binaires vulnérables avec POC)
 
 - https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads (liste payloads pour attaque via USB)
+
+- Browerling --> Permet de sandboxer un lien 
+
+- OnWorks ou DistroTest --> Sandbox de distribution Linux au sein du naviguateur
 
 
 ### Windows 
@@ -65,15 +69,20 @@
 
 - Kon Boot --> Supprime le mot de passe à la volée
 
+- APKLeaks --> Projet qui scanne une application Android
+
 ## OSINT
 
 - Script G-Hunt --> Rassemble les informations à partir d'une adresse mail google
 
 - NexFil --> Trouve les réseaux sociaux d'une personne
 
+- https://29a.ch/photo-forensics --> Analyse de photo forensics
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
+- ImgUpscaler --> Site qui améliore la qualité
 
 - Resizer.in --> Augmente/Diminue une image en gardant la qualité
 
@@ -81,7 +90,6 @@
 
 - Polarr --> Outil de retouche en ligne
 
-- https://29a.ch/photo-forensics --> Analyse de photo forensics
 
 ## Backup
 
@@ -103,7 +111,7 @@
 
 - TronScript --> Evalue le PC et remonte les problèmes
 
-- Powercfg /batteryreport --> Sort un rapport sur l'état de la batterie
+- powercfg /batteryreport --> Sort un rapport sur l'état de la batterie (à faire en powershell)
 
 - ipconfig /displaydns | find porn --> voir les recherches DNS
 
