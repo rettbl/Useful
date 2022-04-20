@@ -29,6 +29,9 @@
 
 - lastlog --> Voir les différents comptes et leurs dernières connexions
 
+- Pour **compresser avec tar** --> tar -czvf logs_archive.tar.gz *
+    - il est possible de supprimer les fichiers après compressions --> tar -czvf logs_archive.tar.gz * --remove-files
+- Pour **décompresser avec tar** --> tar -xzvf logs_archive.tar.gz
 
 ## Malware
 
