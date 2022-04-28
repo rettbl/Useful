@@ -127,3 +127,39 @@
 - DroidCam --> Transforme le téléphone en Webcam
 
 - Automata --> Automatise des tâches Web
+
+## Hardening
+
+- Connexion clé ssh (PAM authentification & password authentification no)
+
+
+- Si on a une DMZ mettre en place un bastion (serveur qui sécurise tout ce qui a derrière)
+
+
+- Désactiver root et avoir un autre compte avec sudo (permit root login no)
+
+
+- Désactiver open ssl server si pas nécessaire
+
+
+- Mettre en place fail2ban
+
+
+- Avoir le firewall iptables :
+
+
+	- iptables -A INPUT -i eth0 -p tcp --dport 22 -m state NEW,ESTABLISHED -j ACCEPT
+	  --> Ce qui rentre sur le serveur (INPUT) via l'interface ETH0 avec le protocole TCP et le port de DESTINATION 22 on l'accepte
+
+	- iptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state ESTABLISHED -j ACCEPT
+	  --> Ce qui sort du serveur (OUTPUT) via l'interface ETH0 avec le protocole TCP et le port de SORTIE 22 on l'accepte
+
+	- iptables -P INPUT DROP
+	  --> Tout ce qui rentre pas dans les critères on le drop
+
+
+- Mettre en place les backups
+
+- Mot de passe dans le Bios
+ 
+- Désactiver l'USB
