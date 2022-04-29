@@ -11,6 +11,7 @@
 ### Tips
 
 - ' or 1=1- - --> Bypass authentification web
+- https://github.com/payloadbox/sql-injection-payload-list
 
 ## Linux
 
