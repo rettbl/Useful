@@ -83,6 +83,8 @@
 
 - https://29a.ch/photo-forensics --> Analyse de photo forensics
 
+- Exif Pilot --> Ajout de donnéees exif à une photo
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
