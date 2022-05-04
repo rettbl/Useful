@@ -8,6 +8,8 @@
 
 - https://github.com/vavkamil/awesome-bugbounty-tools (regroupe les tools CTF)
 
+- https://github.com/mufeedvh/moonwalk --> efface les traces après des actions sur un système
+
 ### Tips
 
 - ' or 1=1- - --> Bypass authentification web
