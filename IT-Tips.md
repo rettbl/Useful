@@ -168,3 +168,5 @@
 - Mot de passe dans le Bios
  
 - Désactiver l'USB
+
+- Script CIS/Lynis
