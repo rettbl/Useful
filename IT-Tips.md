@@ -17,6 +17,8 @@
 
 
 - https://github.com/payloadbox/xss-payload-list --> Payload XSS
+	- <iframe src="javascript:alert(`xss`)">
+
 
 ## Linux
 
