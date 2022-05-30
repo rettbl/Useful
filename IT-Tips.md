@@ -10,10 +10,13 @@
 
 - https://github.com/mufeedvh/moonwalk --> efface les traces après des actions sur un système
 
-### Tips
+### Payload
 
 - ' or 1=1- - --> Bypass authentification web
 	- https://github.com/payloadbox/sql-injection-payload-list
+
+
+- https://github.com/payloadbox/xss-payload-list --> Payload XSS
 
 ## Linux
 
