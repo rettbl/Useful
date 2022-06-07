@@ -40,6 +40,8 @@
 - Pour **compresser avec tar** --> tar -czvf logs_archive.tar.gz *
     - il est possible de supprimer les fichiers après compressions --> tar -czvf logs_archive.tar.gz * --remove-files
 - Pour **décompresser avec tar** --> tar -xzvf logs_archive.tar.gz
+		
+- scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova --> envoyer un fichier via ssh
 
 ## Malware
 
