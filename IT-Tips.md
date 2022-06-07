@@ -62,7 +62,7 @@
 
 ### Windows 
 
-- ECHO@OFF start (mettre le fichier en .bat)
+- ECHO@OFF start (mettre le fichier en .bat) --> lance des choses à la suite
 
 - %0|%0 (mettre le fichier en .bat) --> Ralentis l'ordinateur
 
