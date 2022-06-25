@@ -101,7 +101,7 @@
 
 - Resizer.in --> Augmente/Diminue une image en gardant la qualité
 	
-- Hama --> Efface une personne ou un objet sur une image
+- [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
 
 - Deface --> Flouter des visages
 
