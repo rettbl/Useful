@@ -145,6 +145,8 @@
 - DroidCam --> Transforme le téléphone en Webcam
 
 - Automata --> Automatise des tâches Web
+	
+- Upload files --> https://www.file.io/
 
 ## Hardening
 
