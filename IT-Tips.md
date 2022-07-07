@@ -43,7 +43,9 @@
 		
 - scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova --> envoyer un fichier via ssh
 	
-- Mettre un adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces)
+- Mettre un adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
+
+`	
 network:
   version: 2
   renderer: networkd
@@ -53,7 +55,7 @@ network:
      addresses: [192.168.1.233/24]
      gateway4: 192.168.1.1
      nameservers:
-       addresses: [8.8.8.8,8.8.4.4]
+       addresses: [8.8.8.8,8.8.4.4]`
 
 ## Malware
 
