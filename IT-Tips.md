@@ -19,44 +19,44 @@
 
 
 - https://github.com/payloadbox/xss-payload-list --> Payload XSS
-	- <iframe src="javascript:alert(`xss`)">
+	- `<iframe src="javascript:alert(`xss`)">`
 	
 ## BruteForce
 ### Hydra
 
-- Password web --> hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V
+- Password web --> `hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V`
 
-- Password SSH --> hydra -l molly -P rockyou.txt 10.10.212.76 ssh
+- Password SSH --> `hydra -l molly -P rockyou.txt 10.10.212.76 ssh`
 	
 ## Nmap
 
-- Voir les ports ouverts --> nmap -Pn 192.168.1.1
+- Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 
-- Voir la version des services --> nmap -sV 192.168.1.1
+- Voir la version des services --> `nmap -sV 192.168.1.1`
 
 
 ## Linux
 
-- Monter USB --> mount /dev/usbNAME /media/usb
-  - Trouver sa clé USB --> sudo blkid
+- Monter USB --> `mount /dev/usbNAME /media/usb`
+  - Trouver sa clé USB --> `sudo blkid` ou `df -h`
   
-- Monter serveur python --> python3 -m http.server 555 --bind 192.168.1.1
+- Monter serveur python --> `python3 -m http.server 555 --bind 192.168.1.1`
    - Croc --> Envoyer des fichiers entre 2 PC
 
-- #kali-undercover --> transforme le GUI en Windows
+- `kali-undercover` --> transforme le GUI en Windows
 
-- last --> dernière connexion
-- lastb --> dernière connexion qui à échoué
+- `last` --> dernière connexion
+- `lastb` --> dernière connexion qui à échoué
 
-- find / -name XXX --> trouver un fichier dans le système
+- `find / -name XXX 2>/dev/null` --> trouver un fichier dans le système
 
-- lastlog --> Voir les différents comptes et leurs dernières connexions
+- `lastlog` --> Voir les différents comptes et leurs dernières connexions
 
-- Pour **compresser avec tar** --> tar -czvf logs_archive.tar.gz *
-    - il est possible de supprimer les fichiers après compressions --> tar -czvf logs_archive.tar.gz * --remove-files
-- Pour **décompresser avec tar** --> tar -xzvf logs_archive.tar.gz
+- Pour **compresser avec tar** --> `tar -czvf logs_archive.tar.gz ./*`
+    - il est possible de supprimer les fichiers après compressions --> `tar -czvf logs_archive.tar.gz ./* --remove-files`
+- Pour **décompresser avec tar** --> `tar -xzvf logs_archive.tar.gz`
 		
-- scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova --> envoyer un fichier via ssh
+- `scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova` --> envoyer un fichier via ssh
 	
 - Mettre un adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
 
@@ -197,13 +197,13 @@ network:
 - Avoir le firewall iptables :
 
 
-	- iptables -A INPUT -i eth0 -p tcp --dport 22 -m state NEW,ESTABLISHED -j ACCEPT
+	- `iptables -A INPUT -i eth0 -p tcp --dport 22 -m state NEW,ESTABLISHED -j ACCEPT`
 	  --> Ce qui rentre sur le serveur (INPUT) via l'interface ETH0 avec le protocole TCP et le port de DESTINATION 22 on l'accepte
 
-	- iptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state ESTABLISHED -j ACCEPT
+	- `iptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state ESTABLISHED -j ACCEPT`
 	  --> Ce qui sort du serveur (OUTPUT) via l'interface ETH0 avec le protocole TCP et le port de SORTIE 22 on l'accepte
 
-	- iptables -P INPUT DROP
+	- `iptables -P INPUT DROP`
 	  --> Tout ce qui rentre pas dans les critères on le drop
 
 
