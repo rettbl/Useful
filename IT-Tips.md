@@ -25,6 +25,12 @@
 - Password web --> hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V
 
 - Password SSH --> hydra -l molly -P rockyou.txt 10.10.212.76 ssh
+	
+## Nmap
+
+- Voir les ports ouverts --> nmap -Pn 192.168.1.1
+
+- Voir la version des services --> nmap -sV 192.168.1.1
 
 
 ## Linux
