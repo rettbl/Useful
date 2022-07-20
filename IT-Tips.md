@@ -57,7 +57,8 @@
 - Pour **décompresser avec tar** --> `tar -xzvf logs_archive.tar.gz`
 		
 - `scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova` --> envoyer un fichier via ssh
-	
+- `scp -r root@192.168.100.1:/root/ /home/mathis` --> récupérer un fichier via ssh
+	 
 - Mettre un adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
 
 `	
