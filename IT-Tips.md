@@ -214,4 +214,7 @@ network:
  
 - Désactiver l'USB
 
+- https://github.com/GamehunterKaan/AutoPWN-Suite
+- https://doubletake.fr/securiser-simplement-son-serveur.html
+
 - Script CIS/Lynis
