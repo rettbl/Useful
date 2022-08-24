@@ -88,8 +88,8 @@ network:
 - https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads (liste payloads pour attaque via USB)
 
 - Browerling --> Permet de sandboxer un lien 
-
 - OnWorks ou DistroTest --> Sandbox de distribution Linux au sein du naviguateur
+- https://sandboxie-plus.com/ --> Sandbox standalone
 
 
 ### Windows 
