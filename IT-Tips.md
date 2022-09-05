@@ -91,6 +91,8 @@ network:
 - OnWorks ou DistroTest --> Sandbox de distribution Linux au sein du naviguateur
 - https://sandboxie-plus.com/ --> Sandbox standalone
 
+- Test PC (tronScript) --> https://www.reddit.com/r/TronScript/wiki/downloads/
+
 
 ### Windows 
 
