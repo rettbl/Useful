@@ -179,6 +179,9 @@ network:
 - Automata --> Automatise des tâches Web
 	
 - Upload files --> https://www.file.io/
+- partage de fichier via Tor --> https://github.com/onionshare/onionshare
+
+- Find movie --> "Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)
 
 ## Hardening
 
