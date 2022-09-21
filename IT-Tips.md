@@ -29,6 +29,11 @@
 - Password SSH --> `hydra -l molly -P rockyou.txt 10.10.212.76 ssh`
 
 - Password FTP --> `hydra -l chris -P /usr/share/wordlist/rockyou.txt 10.10.150.97 ftp`
+
+### John
+
+- Crack ZIP --> `zip2john X.zip > zip.hashes
+john zip.hashes`
 	
 ## Nmap
 
@@ -141,7 +146,7 @@ network:
 
 - Polarr --> Outil de retouche en ligne
 
-- Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk cutie.png`
+- Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk -e cutie.png`
 
 ## Dessin
 
