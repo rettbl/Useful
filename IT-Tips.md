@@ -162,15 +162,15 @@ network:
 
 ## Windows 
   
-- dir C:\*.ova /S | more --> Recherche dans le système un fichier .ova
+- `dir C:\*.ova /S | more` --> Recherche dans le système un fichier .ova
 
-- Netstat -anpe --> Tout les flux actifs actutellement
+- `netstat -anpe` --> Tout les flux actifs actutellement
 
 - TronScript --> Evalue le PC et remonte les problèmes
 
-- powercfg /batteryreport --> Sort un rapport sur l'état de la batterie (à faire en powershell)
+- `powercfg /batteryreport` --> Sort un rapport sur l'état de la batterie (à faire en powershell)
 
-- ipconfig /displaydns | find porn --> voir les recherches DNS
+- `ipconfig /displaydns | find X` --> voir les recherches DNS
 
 ## Other
 
@@ -185,17 +185,17 @@ network:
 - Upload files --> https://www.file.io/
 - partage de fichier via Tor --> https://github.com/onionshare/onionshare
 
-- Find movie --> "Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)
+- Find movie --> `"Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)`
 
 ## Hardening
 
-- Connexion clé ssh (PAM authentification & password authentification no)
+- Connexion clé ssh (PAM authentification & `password authentification no`)
 
 
 - Si on a une DMZ mettre en place un bastion (serveur qui sécurise tout ce qui a derrière)
 
 
-- Désactiver root et avoir un autre compte avec sudo (permit root login no)
+- Désactiver root et avoir un autre compte avec sudo (`permit root login no`)
 
 
 - Désactiver open ssl server si pas nécessaire
