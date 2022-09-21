@@ -141,6 +141,8 @@ network:
 
 - Polarr --> Outil de retouche en ligne
 
+- Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk cutie.png`
+
 ## Dessin
 
 - https://www.tldraw.com/ --> faire des shcémas
