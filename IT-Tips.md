@@ -32,8 +32,10 @@
 
 ### John
 
-- Crack ZIP --> `zip2john X.zip > zip.hashes
+- Crack ZIP --> `zip2john X.zip > zip.hashes \n
 john zip.hashes`
+
+- Crack clé RSA SSH --> `ssh2john.py secretKey > id_rsa.hash \n john --wordlist=dict.txt id_rsa.hash`
 	
 ## Nmap
 
