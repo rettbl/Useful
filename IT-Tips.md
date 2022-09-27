@@ -41,6 +41,10 @@ john zip.hashes`
 
 - Voir la version des services --> `nmap -sV 192.168.1.1`
 
+## Directory
+
+- Gobuster --> gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt 
+
 
 ## Linux
 
