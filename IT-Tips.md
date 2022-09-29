@@ -234,7 +234,7 @@ network:
  
 - Désactiver l'USB
 
-- https://github.com/GamehunterKaan/AutoPWN-Suite
+- https://github.com/GamehunterKaan/AutoPWN-Suite --> script qui détecte les vulnérabilités
 - https://doubletake.fr/securiser-simplement-son-serveur.html
 
 - Script CIS/Lynis
