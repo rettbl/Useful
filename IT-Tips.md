@@ -4,21 +4,21 @@
 
 ## CTF
 
-- Reverse shell PHP --> https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+- Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 
 ### Tools
 
-- https://github.com/vavkamil/awesome-bugbounty-tools (regroupe les tools CTF)
+- [BugBountyTool](https://github.com/vavkamil/awesome-bugbounty-tools) (regroupe les tools CTF)
 
-- https://github.com/mufeedvh/moonwalk --> efface les traces après des actions sur un système
+- [Moonwalk](https://github.[Moonwalk](/mufeedvh/moonwalk) --> efface les traces après des actions sur un système
 
 ### Payload
 
 - ' or 1=1- - --> Bypass authentification web
-	- https://github.com/payloadbox/sql-injection-payload-list
+	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
 
 
-- https://github.com/payloadbox/xss-payload-list --> Payload XSS
+- [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
 	
 ## BruteForce
@@ -98,13 +98,13 @@ network:
 
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 
-- https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads (liste payloads pour attaque via USB)
+- [USB Payload](https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads) (liste payloads pour attaque via USB)
 
 - Browerling --> Permet de sandboxer un lien 
 - OnWorks ou DistroTest --> Sandbox de distribution Linux au sein du naviguateur
-- https://sandboxie-plus.com/ --> Sandbox standalone
+- [Sandbox](https://sandboxie-plus.com/) --> Sandbox standalone
 
-- Test PC (tronScript) --> https://www.reddit.com/r/TronScript/wiki/downloads/
+- Test PC (tronScript) --> [Tron](https://www.reddit.com/r/TronScript/wiki/downloads/)
 
 
 ### Windows 
@@ -135,7 +135,7 @@ network:
 
 - NexFil --> Trouve les réseaux sociaux d'une personne
 
-- https://29a.ch/photo-forensics --> Analyse de photo forensics
+- [29a](https://29a.ch/photo-forensics) --> Analyse de photo forensics
 
 - Exif Pilot --> Ajout de donnéees exif à une photo
 
@@ -193,8 +193,8 @@ network:
 
 - Automata --> Automatise des tâches Web
 	
-- Upload files --> https://www.file.io/
-- partage de fichier via Tor --> https://github.com/onionshare/onionshare
+- Upload files --> [File IO](https://www.file.io/)
+- partage de fichier via Tor --> [OnionShare](https://github.com/onionshare/onionshare)
 
 - Find movie --> `"Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)`
 
@@ -234,7 +234,7 @@ network:
  
 - Désactiver l'USB
 
-- https://github.com/GamehunterKaan/AutoPWN-Suite --> script qui détecte les vulnérabilités
-- https://doubletake.fr/securiser-simplement-son-serveur.html
+- [AutoPWN](https://github.com/GamehunterKaan/AutoPWN-Suite) --> script qui détecte les vulnérabilités
+- [SecureWeb](https://doubletake.fr/securiser-simplement-son-serveur.html) --> Guide de sécurisation
 
-- Script CIS/Lynis
+- Script [CIS]https://github.com/ovh/debian-cis ou [Lynis](https://github.com/CISOfy/Lynis)
