@@ -90,13 +90,13 @@ network:
 
 ### Tools
 
-- Virus Total --> étudier un fichier
+- [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
 
 - MRT --> Analyse PC (application au sein de Windows)
 
 - HOIC --> Attaque DDOS
 
-- https://gtfobins.github.io/ (liste de binaires vulnérables avec POC)
+- [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 
 - https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads (liste payloads pour attaque via USB)
 
@@ -144,19 +144,19 @@ network:
 - Real Esrgan --> améliore la qualité des photos
 - ImgUpscaler --> Site qui améliore la qualité
 
-- Resizer.in --> Augmente/Diminue une image en gardant la qualité
+- [Resizer.in](https://imageresizer.com/) --> Augmente/Diminue une image en gardant la qualité
 	
 - [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
 
-- Deface --> Flouter des visages
+- [Deface](https://github.com/ORB-HD/deface) --> Flouter des visages
 
-- Polarr --> Outil de retouche en ligne
+- [Polarr](https://www.polarr.com/) --> Outil de retouche en ligne
 
 - Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk -e cutie.png`
 
 ## Dessin
 
-- https://www.tldraw.com/ --> faire des shcémas
+- [Tldraw](https://www.tldraw.com/) --> faire des shcémas
 
 
 ## Backup
