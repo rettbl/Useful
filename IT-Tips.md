@@ -167,7 +167,7 @@ network:
 
 - Redo Rescue
 
-- MeeroDrop --> Transfert de fichier jusqu'à 20 Go
+- [MeeroDrop](https://www.meerodrop.com/) --> Transfert de fichier jusqu'à 20 Go
 
 - Blomp --> Cloud jusqu'a 200 Go
 
