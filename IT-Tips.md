@@ -19,7 +19,7 @@
 
 
 - https://github.com/payloadbox/xss-payload-list --> Payload XSS
-	- `<iframe src="javascript:alert(`xss`)">`
+	- `<iframe src="javascript:alert('xss')">`
 	
 ## BruteForce
 ### Hydra
@@ -45,7 +45,7 @@ john zip.hashes`
 
 ## Directory
 
-- Gobuster --> gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt 
+- Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
 
 
 ## Linux
@@ -109,9 +109,9 @@ network:
 
 ### Windows 
 
-- ECHO@OFF start (mettre le fichier en .bat) --> lance des choses à la suite
+- `ECHO@OFF start` (mettre le fichier en .bat) --> lance des choses à la suite
 
-- %0|%0 (mettre le fichier en .bat) --> Ralentis l'ordinateur
+- `%0|%0` (mettre le fichier en .bat) --> Ralentis l'ordinateur
 
 ## Forensics
 
@@ -200,7 +200,7 @@ network:
 
 ## Hardening
 
-- Connexion clé ssh (PAM authentification & `password authentification no`)
+- Connexion clé ssh (`PAM authentification` & `password authentification no`)
 
 
 - Si on a une DMZ mettre en place un bastion (serveur qui sécurise tout ce qui a derrière)
