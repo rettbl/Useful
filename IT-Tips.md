@@ -47,6 +47,8 @@ john zip.hashes`
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
 
+- TheHarvester (énumération DNS) --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n`
+
 
 ## Linux
 
