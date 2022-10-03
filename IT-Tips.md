@@ -213,6 +213,10 @@ network:
 
 - Find movie --> `"Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)`
 
+## Admin Sys
+
+- [Server World](https://www.server-world.info/en/)
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
