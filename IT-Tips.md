@@ -158,7 +158,6 @@ network:
 
 - Real Esrgan --> améliore la qualité des photos
 - ImgUpscaler --> Site qui améliore la qualité
-
 - [Resizer.in](https://imageresizer.com/) --> Augmente/Diminue une image en gardant la qualité
 	
 - [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
@@ -168,6 +167,8 @@ network:
 - [Polarr](https://www.polarr.com/) --> Outil de retouche en ligne
 
 - Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk -e cutie.png`
+
+- [ExifCleaner](https://exifcleaner.com/) --> Enlève les données exif
 
 ## Dessin
 
