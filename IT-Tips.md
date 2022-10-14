@@ -59,6 +59,8 @@ john zip.hashes`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
+- SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
+
 ## Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
