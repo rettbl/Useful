@@ -65,7 +65,7 @@ john zip.hashes`
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
 
-## Linux
+## Linux - Commande
 
 - Monter USB --> `mount /dev/usbNAME /media/usb`
   - Trouver sa clé USB --> `sudo blkid` ou `df -h`
@@ -101,7 +101,11 @@ network:
      addresses: [192.168.1.233/24]
      gateway4: 192.168.1.1
      nameservers:
-       addresses: [8.8.8.8,8.8.4.4]`
+       addresses: [8.8.8.8]`
+       
+## Windows - Commande
+
+- Trouver le mot de passe wifi --> `netsh wlan show profiles "Bbox-R&T" key=clear`
 
 ## Malware
 
