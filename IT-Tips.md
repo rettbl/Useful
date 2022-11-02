@@ -170,7 +170,7 @@ network:
 
 - [Deface](https://github.com/ORB-HD/deface) --> Flouter des visages
 
-- [Polarr](https://www.polarr.com/web/) --> Outil de retouche en ligne
+- [Polarr](https://photoeditor.polarr.com/) --> Outil de retouche en ligne
 
 - Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk -e cutie.png`
 
