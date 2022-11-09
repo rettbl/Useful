@@ -68,6 +68,7 @@ john zip.hashes`
 ## Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
+- Dirb --> `dirb http://mypage.com`
 
 ## Linux - Commande
 
