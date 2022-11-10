@@ -59,7 +59,7 @@ john zip.hashes`
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 
-- Wordpress --> `wpcan --url www.mokoil.com`
+- Wordpress --> `wpscan --url www.mokoil.com`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
