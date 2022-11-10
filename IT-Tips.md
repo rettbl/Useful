@@ -60,6 +60,7 @@ john zip.hashes`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 
 - Wordpress --> `wpscan --url www.mokoil.com`
+	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
