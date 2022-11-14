@@ -116,6 +116,16 @@ network:
 
 - Trouver le mot de passe wifi --> `netsh wlan show profiles "Bbox-R&T" key=clear`
 
+- `dir C:\*.ova /S | more` --> Recherche dans le système un fichier .ova
+
+- `netstat -anpe` --> Tout les flux actifs actutellement
+
+- TronScript --> Evalue le PC et remonte les problèmes
+
+- `powercfg /batteryreport` --> Sort un rapport sur l'état de la batterie (à faire en powershell)
+
+- `ipconfig /displaydns | find X` --> voir les recherches DNS
+
 ## Malware
 
 ### Tools
@@ -201,18 +211,6 @@ network:
 - [MeeroDrop](https://www.meerodrop.com/) --> Transfert de fichier jusqu'à 20 Go
 
 - Blomp --> Cloud jusqu'a 200 Go
-
-## Windows 
-  
-- `dir C:\*.ova /S | more` --> Recherche dans le système un fichier .ova
-
-- `netstat -anpe` --> Tout les flux actifs actutellement
-
-- TronScript --> Evalue le PC et remonte les problèmes
-
-- `powercfg /batteryreport` --> Sort un rapport sur l'état de la batterie (à faire en powershell)
-
-- `ipconfig /displaydns | find X` --> voir les recherches DNS
 
 ## Other
 
