@@ -112,6 +112,8 @@ network:
      nameservers:
        addresses: [8.8.8.8]`
        
+- Shutdown now --> `sudo shutdown -r now`
+       
 ## Windows - Commande
 
 - Trouver le mot de passe wifi --> `netsh wlan show profiles "Bbox-R&T" key=clear`
@@ -232,6 +234,8 @@ network:
 - [Server World](https://www.server-world.info/en/)
 
 - [Crontab](https://crontab.guru/)
+
+- VboxAdditions (mettre la VM en full écran) --> `sudo sh ./VBoxLinuxAdditions.run --nox11`
 
 ## Hardening
 
