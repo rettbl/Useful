@@ -246,7 +246,7 @@ network:
 - Surveiller des fichiers 
 	- `watch -n 10 tail /var/log/access.log`
 	- `tail -f /var/log/access.log`
-	- Plusiuers fichiers --> `tail -f /var/log/auth.log /var/log/fail2ban.log`
+	- Plusieurs fichiers --> `tail -f /var/log/auth.log /var/log/fail2ban.log`
 
 ## Hardening
 
