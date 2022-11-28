@@ -118,7 +118,7 @@ network:
      address 192.168.1.2/24
      gateway 192.157.1.1`
        
-- Shutdown now --> `sudo shutdown -r now`
+- Shutdown now --> `sudo shutdown -h now`
        
 ## Windows - Commande
 
