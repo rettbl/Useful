@@ -98,7 +98,7 @@ john zip.hashes`
 - `scp Alcasar-v3.2.ova root@192.168.100.40:/root/Alcasar-v3.2.ova` --> envoyer un fichier via ssh
 - `scp -r root@192.168.100.1:/root/ /home/mathis` --> récupérer un fichier via ssh
 	 
-- Mettre un adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
+- Mettre une adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
 
 `	
 network:
@@ -111,6 +111,12 @@ network:
      gateway4: 192.168.1.1
      nameservers:
        addresses: [8.8.8.8]`
+       
+- Mettre une adresse IP statique Debian --> `/etc/network/interfaces` :
+
+`iface enp0s3 inet static
+     address 192.168.1.2/24
+     gateway 192.157.1.1`
        
 - Shutdown now --> `sudo shutdown -r now`
        
