@@ -243,6 +243,11 @@ network:
 
 - VboxAdditions (mettre la VM en full écran) --> `sudo sh ./VBoxLinuxAdditions.run --nox11`
 
+- Surveiller des fichiers 
+	- `watch -n 10 tail /var/log/access.log`
+	- `tail -f /var/log/access.log`
+	- Plusiuers fichiers --> `tail -f /var/log/auth.log /var/log/fail2ban.log`
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
