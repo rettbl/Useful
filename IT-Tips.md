@@ -190,7 +190,7 @@ network:
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
-- ImgUpscaler --> Site qui améliore la qualité
+- [ImgUpscaler](https://www.imgupscaler.com/) --> Site qui améliore la qualité
 - [Resizer.in](https://imageresizer.com/) --> Augmente/Diminue une image en gardant la qualité
 	
 - [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
