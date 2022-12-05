@@ -119,6 +119,15 @@ network:
      gateway 192.157.1.1`
        
 - Shutdown now --> `sudo shutdown -h now`
+
+
+## Bash - Linux
+
+- Récupérer le X caratères d'une string --> `cut -c 8-19`
+
+- Récupérer les X derniers caratères d'une string --> `tail  -c 6`
+
+
        
 ## Windows - Commande
 
