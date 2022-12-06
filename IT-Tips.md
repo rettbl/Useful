@@ -127,8 +127,6 @@ network:
 
 - Récupérer les X derniers caratères d'une string --> `tail  -c 6`
 
-
-       
 ## Windows - Commande
 
 - Trouver le mot de passe wifi --> `netsh wlan show profiles "Bbox-R&T" key=clear`
@@ -256,6 +254,8 @@ network:
 	- `watch -n 10 tail /var/log/access.log`
 	- `tail -f /var/log/access.log`
 	- Plusieurs fichiers --> `tail -f /var/log/auth.log /var/log/fail2ban.log`
+
+- REGEX pour trouver des IPs --> `grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
 
 ## Hardening
 
