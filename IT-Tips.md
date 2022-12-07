@@ -55,6 +55,9 @@ john zip.hashes`
 
 - Table ARP
 
+- [Shodan](https://www.shodan.io/)
+- [Onyphe](https://www.onyphe.io/)
+
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
