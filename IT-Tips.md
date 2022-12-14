@@ -67,7 +67,7 @@ john zip.hashes`
 
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
-	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt`
+	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
