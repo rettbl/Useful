@@ -63,6 +63,7 @@ john zip.hashes`
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
+- Pour le web --> `nikto -h http://172.16.28.230/`
 
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
