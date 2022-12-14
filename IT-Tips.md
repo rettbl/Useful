@@ -77,6 +77,7 @@ john zip.hashes`
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
 - Dirb --> `dirb http://mypage.com`
+	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
 - Fuzz --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
 
 ## Linux - Commande
