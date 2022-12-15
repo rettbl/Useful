@@ -162,6 +162,7 @@ network:
 - HOIC --> Attaque DDOS
 
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
+	- Lister les SUIDS --> `find / -perm /4000 2>/dev/null`
 
 - [USB Payload](https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads) (liste payloads pour attaque via USB)
 
