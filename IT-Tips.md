@@ -128,6 +128,8 @@ network:
        
 - Shutdown now --> `sudo shutdown -h now`
 
+- Clear history --> `history -c`
+
 
 ## Bash - Linux
 
