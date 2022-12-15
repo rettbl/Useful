@@ -270,6 +270,8 @@ network:
 
 - REGEX pour trouver des IPs --> `grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
 
+- Trouver une machine quand on a pas son IP --> `netdiscover -r 10.0.2.0/24`
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
