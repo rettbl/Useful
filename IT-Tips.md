@@ -80,6 +80,8 @@ john zip.hashes`
 		- sqlmap -r r.txt --batch -D Staff --tables
 		- sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump
 
+- WAF --> `wafw00f http://rainbowstore2.chall.malicecyber.com/ `
+
 ## Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
