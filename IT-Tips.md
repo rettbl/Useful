@@ -247,6 +247,8 @@ network:
 
 - Blomp --> Cloud jusqu'a 200 Go
 
+- [ufile](https://ufile.io/) --> Dépôt de fichier 5 Go
+
 ## Other
 
 - Barrier --> permet d'avoir plusieurs PC sur 1 PC
