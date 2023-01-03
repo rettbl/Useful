@@ -235,6 +235,8 @@ network:
 
 - [ExifCleaner](https://exifcleaner.com/) --> Enlève les données exif
 
+- Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
+
 ## Dessin
 
 - [Tldraw](https://www.tldraw.com/) --> faire des shcémas
