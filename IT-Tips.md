@@ -238,6 +238,8 @@ network:
 
 - Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
 
+- Flouter des visages --> https://github.com/ORB-HD/deface
+
 ## Dessin
 
 - [Tldraw](https://www.tldraw.com/) --> faire des shcémas
