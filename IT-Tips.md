@@ -289,6 +289,8 @@ network:
 
 - Trouver une machine quand on a pas son IP --> `netdiscover -r 10.0.2.0/24`
 
+- [Calcul CVSS](https://cvss.js.org/)
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
