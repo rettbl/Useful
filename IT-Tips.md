@@ -137,7 +137,7 @@ network:
 
 `iface enp0s3 inet static
      address 192.168.1.2/24
-     gateway 192.157.1.1`
+     gateway 192.168.1.1`
        
 - Shutdown now --> `sudo shutdown -h now`
 
