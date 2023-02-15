@@ -236,6 +236,10 @@ network:
 
 - [ExifCleaner](https://exifcleaner.com/) --> Enlève les données exif
 
+- Travailler sur une photo stégano
+	- https://stegonline.georgeom.net/
+	- [aperisolve](https://www.aperisolve.com/)
+
 - Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
 
 ## Dessin
