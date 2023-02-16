@@ -62,7 +62,7 @@ john zip.hashes`
 
 - Crack clé RSA SSH --> `ssh2john.py secretKey > id_rsa.hash \n john --wordlist=dict.txt id_rsa.hash`
 
-- Crack d'une clé SHA256 avec `hascat` --> `hashcat64 -m 1400 -D 1,2 -a 3 -i --increment-min 1 --increment-max 10 -1 ?l?u?d b0c83cbeff5e6e61cfc00eb4c1802289c9514d5328d718484a4eb195266e14a4 ?1?1?1?1?1?1?1?1?1`
+- Crack d'une clé SHA256 avec `hascat` --> `hashcat -m 1400 -D 1,2 -a 3 -i --increment-min 1 --increment-max 10 -1 ?l?u?d b0c83cbeff5e6e61cfc00eb4c1802289c9514d5328d718484a4eb195266e14a4 ?1?1?1?1?1?1?1?1?1`
 	- https://www.malekal.com/hashcat-cracker-des-hashs-empreintes-md5-sha1-sha256/
 
 	
