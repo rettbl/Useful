@@ -227,6 +227,8 @@ network:
 
 - Exif Pilot --> Ajout de donnéees exif à une photo
 
+- Google dorks --> https://usersearch.org/updates/2023/02/05/the-ultimate-google-dorking-cheatcheat-2023/?amp=1
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
