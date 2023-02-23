@@ -305,6 +305,9 @@ network:
 
 - [Calcul CVSS](https://cvss.js.org/)
 
+- Modification date Linux --> `date +%T -s "10:13:13"`
+	- `timedatectl set-timezone "Europe/Paris"`
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
