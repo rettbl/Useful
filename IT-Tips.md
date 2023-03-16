@@ -217,6 +217,8 @@ network:
 
 - APKLeaks --> Projet qui scanne une application Android
 
+- [MagicNumbers] --> https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5
+
 ## OSINT
 
 - Script G-Hunt --> Rassemble les informations à partir d'une adresse mail google
