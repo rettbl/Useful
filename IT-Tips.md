@@ -303,6 +303,8 @@ network:
 
 - REGEX pour trouver des IPs --> `grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
 
+- [Code Retour bash](https://debian-facile.org/doc:programmation:shells:script-bash-etat-de-sorie-et-les-tests)
+
 - Trouver une machine quand on a pas son IP --> `netdiscover -r 10.0.2.0/24`
 
 - [Calcul CVSS](https://cvss.js.org/)
