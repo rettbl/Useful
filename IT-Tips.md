@@ -253,6 +253,8 @@ network:
 
 - Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
 
+- Enlever le background --> https://www.remove.bg/
+
 ## Dessin
 
 - [Tldraw](https://www.tldraw.com/) --> faire des shcémas
