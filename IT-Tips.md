@@ -233,6 +233,8 @@ network:
 
 - Google dorks --> https://usersearch.org/updates/2023/02/05/the-ultimate-google-dorking-cheatcheat-2023/?amp=1
 
+- Trouver des identifiants --> https://bugmenot.com/
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
