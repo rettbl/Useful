@@ -235,6 +235,8 @@ network:
 
 - Trouver des identifiants --> https://bugmenot.com/
 
+- Recherche sur Mail & Téléphone --> https://epieos.com/
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
