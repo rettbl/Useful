@@ -246,7 +246,7 @@ network:
 	
 - [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
 
-- [Deface](https://github.com/ORB-HD/deface) --> Flouter des visages
+- [Pixel]([https://github.com/ORB-HD/deface](https://www.facepixelizer.com/fr/)) --> Flouter des visages
 
 - [Polarr](https://photoeditor.polarr.com/) --> Outil de retouche en ligne
 
