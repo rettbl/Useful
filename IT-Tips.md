@@ -224,7 +224,7 @@ network:
 
 ## OSINT
 
-- Script G-Hunt --> Rassemble les informations à partir d'une adresse mail google
+- [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
 
 - NexFil --> Trouve les réseaux sociaux d'une personne
 
