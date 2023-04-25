@@ -321,6 +321,8 @@ network:
 - Modification date Linux --> `date +%T -s "10:13:13"`
 	- `timedatectl set-timezone "Europe/Paris"`
 
+- Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
