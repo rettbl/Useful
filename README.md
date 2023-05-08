@@ -79,6 +79,7 @@ john zip.hashes`
 - [Shodan](https://www.shodan.io/)
 - [Onyphe](https://www.onyphe.io/)
 - [GreyNoise](https://viz.greynoise.io/)
+- https://dorkgpt.com/
 
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
