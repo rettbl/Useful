@@ -325,6 +325,8 @@ network:
 
 - Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
 
+- - Générer des tableaux --> https://www.tablesgenerator.com/
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
