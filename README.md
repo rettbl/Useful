@@ -325,7 +325,7 @@ network:
 
 - Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
 
-- - Générer des tableaux --> https://www.tablesgenerator.com/
+- Générer des tableaux --> https://www.tablesgenerator.com/
 
 ## Hardening
 
