@@ -225,6 +225,7 @@ network:
 - [MagicNumbers](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5)
 
 - Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
+	- VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw
 
 ## OSINT
 
