@@ -224,6 +224,8 @@ network:
 
 - [MagicNumbers](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5)
 
+- Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
+
 ## OSINT
 
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
