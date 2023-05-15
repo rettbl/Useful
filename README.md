@@ -206,6 +206,8 @@ network:
 
 - `%0|%0` (mettre le fichier en .bat) --> Ralentis l'ordinateur
 
+- Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
+
 ## Forensics
 
 - OsForensics --> Fouiller un PC
