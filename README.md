@@ -243,6 +243,8 @@ network:
 
 - Recherche sur Mail & Téléphone --> https://epieos.com/
 
+- https://intelx.io/
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
