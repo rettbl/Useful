@@ -332,6 +332,8 @@ network:
 
 - Générer des tableaux --> https://www.tablesgenerator.com/
 
+- Dévrerouiler BIOS --> https://bios-pw.org/
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
