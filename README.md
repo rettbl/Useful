@@ -332,7 +332,7 @@ network:
 
 - Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
 
-- Générer des tableaux --> https://www.tablesgenerator.com/
+- Générer des tableaux --> https://www.tablesgenerator.com/ ou https://tableconvert.com/latex-generator
 
 - Dévrerouiler BIOS --> https://bios-pw.org/
 
