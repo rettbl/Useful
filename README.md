@@ -78,6 +78,9 @@ john zip.hashes`
 
 - Table ARP
 
+#### OSINT
+
+- [EPIOS](https://epieos.com/)
 - [Shodan](https://www.shodan.io/)
 - [Onyphe](https://www.onyphe.io/)
 - [GreyNoise](https://viz.greynoise.io/)
