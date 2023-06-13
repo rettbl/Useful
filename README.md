@@ -341,6 +341,8 @@ network:
 
 - Dévrerouiler BIOS --> https://bios-pw.org/
 
+- Tester la communication sur un port --> echo "Papa" > /dev/tcp/127.0.0.1/80
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
