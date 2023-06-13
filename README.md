@@ -317,6 +317,8 @@ network:
 
 - [Crontab](https://crontab.guru/)
 
+- Obtenir l'adresse IP quand pas `ping` --> `hostname -I`
+
 - VboxAdditions (mettre la VM en full écran) --> `sudo sh ./VBoxLinuxAdditions.run --nox11`
 
 - Surveiller des fichiers 
