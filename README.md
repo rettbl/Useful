@@ -343,7 +343,9 @@ network:
 
 - Dévrerouiler BIOS --> https://bios-pw.org/
 
-- Tester la communication sur un port --> echo "Papa" > /dev/tcp/127.0.0.1/80
+- Tester la communication sur un port --> `echo "Papa" > /dev/tcp/127.0.0.1/80`
+
+- Faire des schémas d'arborsence en ligne --> https://tree.nathanfriend.io/
 
 ## Hardening
 
