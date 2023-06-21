@@ -250,7 +250,9 @@ network:
 
 - Recherche sur Mail & Téléphone --> https://epieos.com/
 
-- https://intelx.io/
+- https://intelx.io/ --> Recherche de leak
+
+- https://facecheck.id/ --> Recherche par visage
 
 ## Photo
 
