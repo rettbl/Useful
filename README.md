@@ -349,6 +349,8 @@ network:
 
 - Faire des schémas d'arborsence en ligne --> https://tree.nathanfriend.io/
 
+- Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
