@@ -234,6 +234,10 @@ network:
 - Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
 	- VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw
 
+ - Réseau :
+   	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
+   	- https://github.com/Srinivas11789/PcapXray
+
 ## OSINT
 
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
