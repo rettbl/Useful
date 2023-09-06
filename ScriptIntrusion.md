@@ -17,6 +17,7 @@ cd ../../../EduPython/App
 2.2- Copy Info from Desktop 
 
 copy %USERPROFILE%\Desktop .
+
 copy %USERPROFILE%\Documents .
 
 3- Execute python server
