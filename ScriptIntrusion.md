@@ -3,8 +3,9 @@
 Windows + R : cmd
 
 1.1- Copie du powershell
-
+```powershell=
 copy C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe a.exe
+````
 
 2- Find python (A ne pas faire en réel)
 
