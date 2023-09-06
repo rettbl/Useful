@@ -1,6 +1,7 @@
 1- Ouvrir un cmd : (Il faut faire cela sur un autre bureau Windows Windows + flèche)
-
+```powershell=
 Windows + R : cmd
+```
 
 1.1- Copie du powershell
 ```powershell=
