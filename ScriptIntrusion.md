@@ -10,7 +10,7 @@ copy C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe a.exe
 
 2- Find python (A ne pas faire en réel)
 ```powershell=
-Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
+Get-ChildItem -Path C:\ -Filter *python.exe* -Recurse -File 2>$null
 ```
 
 2.1- Get into the directory
