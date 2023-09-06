@@ -9,4 +9,5 @@ Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
 
 * Il faut faire cela sur un autre bureau Windows 
 * Vérifier l'IP de la machine 
+* Prendre photos check
 * Demandez par message à un collègue si ok
