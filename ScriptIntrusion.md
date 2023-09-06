@@ -1,14 +1,30 @@
-1- Ouvrir un cmd
+1- Ouvrir un cmd : (Il faut faire cela sur un autre bureau Windows Windows + flèche)
+
 Windows + R : cmd
 
 1.1- Copie du powershell
+
 copy C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe a.exe
 
-2- Find python
+2- Find python (A ne pas faire en réel)
+
 Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
 
+2.1- Get into the directory
+
+cd ../../../EduPython/App
+
+2.2- Copy Info from Desktop 
+
+copy C:\Users\A MODIF\Desktop .
+
 3- Execute python server
-python3 -m http.server --directory $env:USERPROFILE\Desktop 8080
+
+.\python.exe server python3 -m http.server 8080 (prendre photo)
+
+4- Get the IP from the station
+
+ipconfig (envoyer message check)
 
 ---
 
