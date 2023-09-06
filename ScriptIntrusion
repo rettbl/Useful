@@ -1,0 +1,6 @@
+1- Copie du powershell
+copy C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe a.exe
+2- Find python
+Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
+3- Execute python server
+ python3 -m http.server --directory $env:USERPROFILE\Desktop 8080
