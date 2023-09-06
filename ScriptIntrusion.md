@@ -20,7 +20,7 @@ copy C:\Users\A MODIF\Desktop .
 
 3- Execute python server
 
-.\python.exe server python3 -m http.server 8080 (prendre photo)
+.\python.exe -m http.server 8080 (prendre photo)
 
 4- Get the IP from the station
 
