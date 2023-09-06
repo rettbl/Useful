@@ -4,3 +4,9 @@ copy C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe a.exe
 Get-ChildItem -Path C:\ -Filter "python" -Recurse -File 2>$null
 3- Execute python server
  python3 -m http.server --directory $env:USERPROFILE\Desktop 8080
+
+---
+
+* Il faut faire cela sur un autre bureau Windows 
+* Vérifier l'IP de la machine 
+* Demandez par message à un collègue si ok
