@@ -219,6 +219,8 @@ network:
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
+- Ressources pentest AD --> https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2023_02.svg
+
 ## Forensics
 
 - OsForensics --> Fouiller un PC
