@@ -215,6 +215,8 @@ network:
 
 - Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
 
+- CrackMapExec --> `$ crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+
 ## Forensics
 
 - OsForensics --> Fouiller un PC
