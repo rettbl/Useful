@@ -215,7 +215,9 @@ network:
 
 - Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
 
-- CrackMapExec --> `$ crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+- CrackMapExec --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+
+- RPC --> `rpcclient -U '%' 10.10.10.161`
 
 ## Forensics
 
