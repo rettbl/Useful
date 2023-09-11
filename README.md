@@ -187,6 +187,8 @@ network:
 
 - [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
 
+- https://github.com/CYB3RMX/Qu1cksc0pe --> Etude fichier local
+
 - MRT --> Analyse PC (application au sein de Windows)
 
 - HOIC --> Attaque DDOS
