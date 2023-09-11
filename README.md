@@ -138,7 +138,7 @@ john zip.hashes`
 	 
 - Mettre une adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
 
-```bash	
+```bash=	
 network:
   version: 2
   renderer: networkd
@@ -153,9 +153,11 @@ network:
        
 - Mettre une adresse IP statique Debian --> `/etc/network/interfaces` :
 
-`iface enp0s3 inet static
+```bash=
+iface enp0s3 inet static
      address 192.168.1.2/24
-     gateway 192.168.1.1`
+     gateway 192.168.1.1
+```
        
 - Shutdown now --> `sudo shutdown -h now`
 
