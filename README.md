@@ -138,7 +138,7 @@ john zip.hashes`
 	 
 - Mettre une adresse IP statique sur Ubuntu --> `/etc/netplan/01-netcfg.yaml` (attention fichier `.yaml` donc sensible aux indentations/espaces) :
 
-````bash	
+```bash	
 network:
   version: 2
   renderer: networkd
