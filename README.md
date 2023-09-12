@@ -279,6 +279,8 @@ iface enp0s3 inet static
 
 - https://facecheck.id/ --> Recherche par visage
 
+- Framework --> https://osintframework.com/
+
 ## Photo
 
 - Real Esrgan --> améliore la qualité des photos
