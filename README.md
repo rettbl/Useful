@@ -378,6 +378,8 @@ iface enp0s3 inet static
 
 - Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
 
+- Trouver les derniers fichiers écrits sur le système : `sudo find / \( -path /proc -o -path /sys \) -prune -o -type f -printf "%T@ %p\n" | sort -n | tail -n 50`
+
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
