@@ -163,6 +163,8 @@ iface enp0s3 inet static
 
 - Clear history --> `history -c`
 
+- Récupérer les fichiers d'unn dossiers sur Internet : `wget -r -np -nH --cut-dirs=2 https://archive.apache.org/dist/tomcat/tomcat-6/`
+
 
 ## Bash - Linux
 
