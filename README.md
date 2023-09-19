@@ -187,6 +187,8 @@ iface enp0s3 inet static
 
 - `ipconfig /displaydns | find X` --> voir les recherches DNS
 
+- Exécuter des scripts powershells --> `Set-ExecutionPolicy Unrestricted`
+
 ---
 
 ## Malware
