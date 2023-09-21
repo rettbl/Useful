@@ -2,8 +2,6 @@
 
 > Le but de ce document est de regrouper les différents informations à propos de l'IT dans un seul repository accessible de partout
 
-[TOC]
-
 ---
 
 ## CTF
