@@ -34,7 +34,7 @@
 
 ### Payload
 
-- ' or 1=1- - --> Bypass authentification web
+- `' or 1=1- -` --> Bypass authentification web
 	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
 	- Mary' union select 1,2,3,4,5,@@version#
 
