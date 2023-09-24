@@ -231,6 +231,7 @@ iface enp0s3 inet static
 - Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
 
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
+  	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
 
 - CrackMapExec  (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
 
