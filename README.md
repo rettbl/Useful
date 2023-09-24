@@ -235,6 +235,8 @@ iface enp0s3 inet static
 
 - CrackMapExec  (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
 
+- Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth`
+
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
 - Obtenir les hash utilisateur --> `impacket-GetNPUsers htb.local/ -dc-ip 10.129.118.175 -request`
