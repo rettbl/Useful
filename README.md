@@ -256,7 +256,7 @@ iface enp0s3 inet static
 
 - BleachBit --> Supprime les fichiers de façon définitive
 
-- TestDisk --> Recover Data
+- TestDisk, Recuva, PhotoRec --> Recover Data
 
 - MVT --> analyse de téléphone
 
