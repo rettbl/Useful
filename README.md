@@ -70,7 +70,7 @@
 ### Crack hash
 
 - Crack ZIP --> `zip2john X.zip > zip.hashes \n
-john zip.hashes`
+john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_files.zip`
 
 - Crack clé RSA SSH --> `ssh2john.py secretKey > id_rsa.hash \n john --wordlist=dict.txt id_rsa.hash`
 
