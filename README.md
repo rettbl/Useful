@@ -275,6 +275,8 @@ iface enp0s3 inet static
    	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
    	- https://github.com/Srinivas11789/PcapXray
 
+- Volatility --> https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet
+
 ---
 
 ## OSINT
