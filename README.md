@@ -76,6 +76,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Crack d'une clé SHA256 avec `hascat` --> `hashcat -m 1400 -D 1,2 -a 3 -i --increment-min 1 --increment-max 10 -1 ?l?u?d b0c83cbeff5e6e61cfc00eb4c1802289c9514d5328d718484a4eb195266e14a4 ?1?1?1?1?1?1?1?1?1`
 	- https://www.malekal.com/hashcat-cracker-des-hashs-empreintes-md5-sha1-sha256/
+   	- [SHA512](https://samsclass.info/123/proj10/p12-hashcat.htm) --> `hashcat -m 1800 -a 0 -o result --remove hash /usr/share/wordlists/rockyou.txt`
 
  - Crack hash Windows --> `john --format=krb5asrep hash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
 
