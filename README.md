@@ -405,6 +405,8 @@ iface enp0s3 inet static
 
 - Générer des tableaux --> https://www.tablesgenerator.com/ ou https://tableconvert.com/latex-generator
 
+- Schéma MD --> https://support.typora.io/Draw-Diagrams-With-Markdown/
+
 - Dévrerouiler BIOS --> https://bios-pw.org/
 
 - Tester la communication sur un port --> `echo "Papa" > /dev/tcp/127.0.0.1/80`
