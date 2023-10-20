@@ -113,6 +113,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+- [PSpy](https://github.com/DominicBreuker/pspy)
 
 - WAF --> `wafw00f http://rainbowstore2.chall.malicecyber.com/ `
 
