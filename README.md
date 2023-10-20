@@ -96,7 +96,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 ### Passif 
 
 - Nslookup/dig
-- TheHarvester (énumération DNS) --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n`
+- Enumération DNS --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n` ou `wfuzz -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -w Downloads/subdomains-top1million-5000.txt --hh 0`
+  
 
 - Table ARP
 
@@ -287,8 +288,10 @@ iface enp0s3 inet static
    	- https://github.com/Srinivas11789/PcapXray
 
 - Volatility --> https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet ou https://blog.onfvp.com/post/volatility-cheatsheet/
-  	- 1ère étape --> `volatility imageinfo -f dump.ram` ou `vol.py -f “/path/to/file” windows.info`
-  	- 2ème étape --> `vol.py -f “/path/to/file” windows.pstree`
+  	- 1ère étape (Identification DUMP) --> `volatility imageinfo -f dump.ram` ou `vol.py -f “/path/to/file” windows.info`
+  	- 2ème étape (Listing des process et commandes) --> `vol.py -f “/path/to/file” windows.pstree` ou `vol.py -f “/path/to/file” windows.cmdline`
+  	- 3ème étape (Listing des fichiers) --> `python3 vol.py -f ../../task.raw windows.filescan > files`
+  	- 4ème étape (dump de fichiers) --> `python3 vol.py -f ../../task.raw -o ./result/ windows.dumpfiles --pid 2880`
 
 ---
 
