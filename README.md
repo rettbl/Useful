@@ -286,7 +286,9 @@ iface enp0s3 inet static
    	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
    	- https://github.com/Srinivas11789/PcapXray
 
-- Volatility --> https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet
+- Volatility --> https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet ou https://blog.onfvp.com/post/volatility-cheatsheet/
+  	- 1ère étape --> `volatility imageinfo -f dump.ram` ou `vol.py -f “/path/to/file” windows.info`
+  	- 2ème étape --> `vol.py -f “/path/to/file” windows.pstree`
 
 ---
 
