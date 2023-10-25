@@ -475,3 +475,5 @@ iface enp0s3 inet static
 - [SecureWeb](https://doubletake.fr/securiser-simplement-son-serveur.html) --> Guide de sécurisation
 
 - Script [CIS](https://github.com/ovh/debian-cis) ou [Lynis](https://github.com/CISOfy/Lynis)
+
+- Script hardening confidentialité --> https://privacy.sexy/
