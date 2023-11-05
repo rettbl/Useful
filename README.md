@@ -95,6 +95,10 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 ## Scan
 ### Passif 
 
+- Ping :
+  * TTL 63 --> Linux 
+  * TTL 127 --> Windows
+
 - Nslookup/dig
 - Enumération DNS --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n` ou `wfuzz -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -w Downloads/subdomains-top1million-5000.txt --hh 0`
   
