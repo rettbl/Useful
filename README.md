@@ -403,6 +403,8 @@ iface enp0s3 inet static
 
 - Obtenir l'adresse IP quand pas `ping` --> `hostname -I`
 
+- Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
+
 - VboxAdditions (mettre la VM en full écran) --> `sudo sh ./VBoxLinuxAdditions.run --nox11`
 
 - Surveiller des fichiers 
