@@ -148,6 +148,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - `lastb` --> dernière connexion qui à échoué
 
 - `find / -name XXX 2>/dev/null` --> trouver un fichier dans le système
+- `grep -rl ".env" /home/user` --> trouver un mot à l'intérieur des fichiers
 
 - `lastlog` --> Voir les différents comptes et leurs dernières connexions
 
