@@ -189,6 +189,8 @@ iface enp0s3 inet static
 
 - Récupérer les fichiers d'unn dossiers sur Internet : `wget -r -np -nH --cut-dirs=2 https://archive.apache.org/dist/tomcat/tomcat-6/`
 
+- Persistence Linux --> https://hadess.io/the-art-of-linux-persistence/
+
 
 ### Bash - Linux
 
