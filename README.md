@@ -490,3 +490,5 @@ iface enp0s3 inet static
 - Script [CIS](https://github.com/ovh/debian-cis) ou [Lynis](https://github.com/CISOfy/Lynis)
 
 - Script hardening confidentialité --> https://privacy.sexy/
+
+- Analyser des dockers en vulnérabilité --> https://github.com/anchore/grype
