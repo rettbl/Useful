@@ -232,6 +232,7 @@ iface enp0s3 inet static
 
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 	- Lister les SUIDS --> `find / -perm /4000 2>/dev/null`
+   	- Exploitation automatique --> https://github.com/Frissi0n/GTFONow
 
  - Boite à outils RedTeam --> https://arttoolkit.github.io/
 
