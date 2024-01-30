@@ -447,6 +447,8 @@ iface enp0s3 inet static
 
 - Diagnostic PC --> https://userdiag.com/
 
+- Code screenshot pour présentation --> https://carbon.now.sh/
+
 ---
 
 ## Hardening
