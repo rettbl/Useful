@@ -130,7 +130,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
   	- Sous-domaines --> `gobuster vhost -u http://10.129.43.197/ -w /usr/share/wordlists/subdomains-top1million-5000.txt`
 - Dirb --> `dirb http://mypage.com`
 	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
-- Fuzz --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
+- Ffuf --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
+  	- Sous-domaines --> `ffuf -w /usr/share/wordlists/subdomains-top1million-5000.txt -H "Host: FUZZ.devvortex.htb" -u http://devvortex.htb -fs 154 `
 
 ---
 
