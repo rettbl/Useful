@@ -151,6 +151,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - `find / -name XXX 2>/dev/null` --> trouver un fichier dans le système
 - `grep -inr ".env" /home/user` --> trouver un mot à l'intérieur des fichiers
 
+- Trouver des mots de passe dans un répertoire --> `grep -arin -o -E '(\w+\W+){0,5}password(\W+\w+){0,5}' .`
+
 - `lastlog` --> Voir les différents comptes et leurs dernières connexions
 
 - Pour **compresser avec tar** --> `tar -czvf logs_archive.tar.gz ./*`
