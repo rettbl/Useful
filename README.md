@@ -220,6 +220,8 @@ iface enp0s3 inet static
 
 - Exécuter des scripts powershells --> `Set-ExecutionPolicy Unrestricted`
 
+- Trouver les fichiers volumineux (en cmd) --> `forfiles /S /M * /C "cmd /C if @fsize GEQ 1073741824 echo @path`
+
 ---
 
 ## Malware
