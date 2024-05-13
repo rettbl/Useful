@@ -140,7 +140,6 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
   - Trouver sa clé USB --> `sudo blkid` ou `df -h`
   
 - Monter serveur python --> `python3 -m http.server 555 --bind 192.168.1.1`
-   - Croc --> Envoyer des fichiers entre 2 PC
 
 - `kali-undercover` --> transforme le GUI en Windows
 
@@ -263,7 +262,7 @@ iface enp0s3 inet static
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
 
-- CrackMapExec  (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+- CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
 
 - Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth`
 
@@ -296,7 +295,7 @@ iface enp0s3 inet static
 - [MagicNumbers](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5)
 
 - Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
-	- VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw
+	- `VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw`
 
  - Réseau :
    	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
