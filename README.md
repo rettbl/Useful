@@ -180,7 +180,8 @@ network:
 - Mettre une adresse IP statique Debian --> `/etc/network/interfaces` :
 
 ```bash=
-iface enp0s3 inet static
+iface eth0 inet static
+allow-hotplug eth0
      address 192.168.1.2/24
      gateway 192.168.1.1
 ```
