@@ -220,6 +220,7 @@ allow-hotplug eth0
 - Exécuter des scripts powershells --> `Set-ExecutionPolicy Unrestricted`
 
 - Trouver les fichiers volumineux (en cmd) --> `forfiles /S /M * /C "cmd /C if @fsize GEQ 1073741824 echo @path`
+  	- En powershell --> `Get-ChildItem -Path C:\ -File -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Length -gt 500MB} | Sort-Object length -Descending | Select-Object Name,Directory,@{n='GB';e={"{0:N2}" -F ($_.length/ 1GB)}}`
 
 ---
 
