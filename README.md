@@ -298,6 +298,7 @@ allow-hotplug eth0
 
 - Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
 	- `VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw`
+ - Problème Virtualbox Kali --> https://forum.ubuntu-fr.org/viewtopic.php?id=2053356
 
  - Réseau :
    	- [NetworkMinor](https://www.netresec.com/?page=NetworkMiner)
