@@ -451,7 +451,8 @@ allow-hotplug eth0
 - Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
 
 - Trouver les derniers fichiers écrits sur le système : `sudo find / \( -path /proc -o -path /sys \) -prune -o -type f -printf "%T@ %p\n" | sort -n | tail -n 50`
-
+- Voir les fichiers créer entre 2 dates avec exclusion de répertoires : `sudo find / -type f \( -newermt "2023-06-01" ! -newermt "2023-07-01" -o -newermt "2023-07-01" ! -newermt "2023-08-01" \) ! -path "/home/kali/.`
+  
 - Diagnostic PC --> https://userdiag.com/
 
 - Code screenshot pour présentation --> https://carbon.now.sh/
