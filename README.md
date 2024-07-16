@@ -267,6 +267,8 @@ allow-hotplug eth0
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
 
+- Utilisation de BloodHunt --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt
+
 - Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth`
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
