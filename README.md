@@ -509,6 +509,8 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 - Code screenshot pour présentation --> https://carbon.now.sh/
 
+- Exposer un site web gratuitement --> https://korben.info/echoduck-hebergement-sites-web-statiques-securise.html
+
 ---
 
 ## Hardening
