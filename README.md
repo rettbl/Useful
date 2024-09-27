@@ -125,6 +125,9 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Pour le web --> `nikto -h http://172.16.28.230/`
 	- Port knocking : `for x in 7469 8475 9842; do nmap -Pn --max-retries 0 -p $x 172.16.28.247; done` ou `knock 192.168.33.5 -v 7469 8475 9842`
 
+- Depuis une machine Linux :
+  	- Voir les machines actives --> `nc -zv 172.17.0.2 1-10000 2>&1 | grep -v "Connection refused"`
+
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
