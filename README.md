@@ -314,7 +314,8 @@ SQL (sophie  dbo@master)> EXECUTE sp_configure 'xp_cmdshell', 1; RECONFIGURE;
 [*] INFO(DANTE-SQL01\SQLEXPRESS): Line 185: Configuration option 'xp_cmdshell' changed from 1 to 1. Run the RECONFIGURE statement to install.
 SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ```
-  	  
+
+- GTFoBins pour Windows --> https://lolbas-project.github.io/
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
