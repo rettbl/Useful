@@ -156,6 +156,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
   - Trouver sa clé USB --> `sudo blkid` ou `df -h`
   
 - Monter serveur python --> `python3 -m http.server 555 --bind 192.168.1.1`
+- Transfert de fichier des 2 côtés --> [raven](https://github.com/gh0x0st/raven)
 
 - `kali-undercover` --> transforme le GUI en Windows
 
