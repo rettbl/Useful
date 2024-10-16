@@ -142,7 +142,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
   	- Avec extensions --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt -x .php`
-  	- Sous-domaines --> `gobuster vhost -u http://10.129.43.197/ -w /usr/share/wordlists/subdomains-top1million-5000.txt --append-domain -r`
+  	- Sous-domaines --> `gobuster vhost -u http://10.129.43.197/ -w /usr/share/wordlists/subdomains-top1million-5000.txt --append-domain -t 40 -k -r`
 - Dirb --> `dirb http://mypage.com`
 	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
 - Ffuf --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
