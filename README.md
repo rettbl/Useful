@@ -152,6 +152,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Ffuf --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
   	- Sous-domaines --> `ffuf -w /usr/share/wordlists/subdomains-top1million-5000.txt -H "Host: FUZZ.devvortex.htb" -u http://devvortex.htb -fs 154 `
 
+- Analyse repo [GIT-DUMPER](https://github.com/arthaud/git-dumper) --> `gitdumper.sh http://shop.trickster.htb/.git/ dest-dir .`
+
 ---
 
 ## Linux - Commande
