@@ -124,7 +124,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 - Voir tout les ports --> `sudo nmap -sS -p- 192.168.1.1`
-- Pour le web --> `nikto -h http://172.16.28.230/`
+- Pour le web --> `nikto -h http://172.16.28.230/` ou `whatweb http://linkvortex.htb` (version des plugins)
 	- Port knocking : `for x in 7469 8475 9842; do nmap -Pn --max-retries 0 -p $x 172.16.28.247; done` ou `knock 192.168.33.5 -v 7469 8475 9842`
 
 - Scan UDP --> `nmap -sU underpass.htb`
