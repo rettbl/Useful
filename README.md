@@ -339,7 +339,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
   	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
-  	- Récupérer tout les fichiers d'un partage --> `mget *`
+  	- Récupérer tout les fichiers d'un partage --> `recurse ON;mget *`
 
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
