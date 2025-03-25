@@ -490,8 +490,6 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 ## Backup
 
-- Pika Backup
-
 - Auto Archiver
 
 - [MeeroDrop](https://www.meerodrop.com/) --> Transfert de fichier jusqu'à 20 Go
