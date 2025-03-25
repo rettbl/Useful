@@ -152,6 +152,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Nslookup/dig
 - Enumération DNS --> `theHarvester -d mokoil.com -e 8.8.8.8 -c -n` ou `wfuzz -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -w Downloads/subdomains-top1million-5000.txt --hh 0`
+- Enumération DNS avec NMAP --> `nmap --script dns-brute rettbl.fr`
   
 - Table ARP
 
