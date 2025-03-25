@@ -494,8 +494,6 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 - Auto Archiver
 
-- Redo Rescue
-
 - [MeeroDrop](https://www.meerodrop.com/) --> Transfert de fichier jusqu'à 20 Go
 
 - Blomp --> Cloud jusqu'a 200 Go
