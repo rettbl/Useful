@@ -369,6 +369,7 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ```
 
 - GTFoBins pour Windows --> https://lolbas-project.github.io/
+- GTFO pour DLL --> https://hijacklibs.net/
 
 - Si problème d'horloge --> `faketime “$(ntpdate -q 10.10.11.42|awk ‘{print $1 " " $2}’)” [Your Command here]`
 
