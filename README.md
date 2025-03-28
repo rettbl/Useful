@@ -338,7 +338,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - Récupérer des fichiers en FTP passif : `wget -m --no-passive ftp://anonymous:anonymous@10.10.110.100`
 
-#### AD
+### Active Directory - AD
 
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
