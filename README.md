@@ -345,6 +345,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
   	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
   	- Récupérer tout les fichiers d'un partage --> `recurse ON;mget *`
 
+- Récupérer les comptes du domaines [kerbrute](https://github.com/ropnop/kerbrute) --> `./kerbrute_linux_amd64 userenum --dc frizzdc.frizz.htb -d frizz.htb /usr/share/wordlists/usernames.txt `
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
   	- Obtenir les utilisateurs de l'AD --> `crackmapexec smb 10.129.186.60 --pass-pol -u 'guest' -p '' --rid-brute`
