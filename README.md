@@ -293,6 +293,8 @@ allow-hotplug eth0
 $dest = "C:\temp\python.zip"
 Invoke-RestMethod -Uri $url -OutFile $dest`
 
+- Trouver un binaire précis en powershell --> `Get-ChildItem -Path C:\ -Filter mysql.exe -Recurse -ErrorAction SilentlyContinue`
+
 ---
 
 ## Malware
@@ -405,21 +407,13 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ## Forensics
 
 - OsForensics --> Fouiller un PC
-
 - BleachBit --> Supprime les fichiers de façon définitive
-
 - TestDisk, Recuva, PhotoRec --> Recover Data
-
 - MVT --> analyse de téléphone
-
 - Medicat --> Fait sauter les mots de passe
-
 - Kon Boot --> Supprime le mot de passe à la volée
-
 - [APKLeaks](https://github.com/dwisiswant0/apkleaks) --> Projet qui scanne une application Android
-
 - [MagicNumbers](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5)
-
 - Dump de Ram VirtualBox --> https://www.ired.team/miscellaneous-reversing-forensics/dump-virtual-box-memory
 	- `VBoxManage.exe debugvm "memento" dumpvmcore --filename C:\Users\mletot\Desktop\dump.raw`
  - Problème Virtualbox Kali --> https://forum.ubuntu-fr.org/viewtopic.php?id=2053356
@@ -439,23 +433,14 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ## OSINT
 
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
-
 - [NexFil](https://github.com/thewhiteh4t/nexfil) --> Trouve les réseaux sociaux d'une personne
-
 - [29a](https://29a.ch/photo-forensics) --> Analyse de photo forensics
-
 - Exif Pilot --> Ajout de donnéees exif à une photo
-
 - Google dorks --> https://usersearch.org/updates/2023/02/05/the-ultimate-google-dorking-cheatcheat-2023/?amp=1
-
 - Trouver des identifiants --> https://bugmenot.com/
-
 - Recherche sur Mail & Téléphone --> https://epieos.com/
-
 - https://intelx.io/ --> Recherche de leak
-
 - https://facecheck.id/ --> Recherche par visage
-
 - Framework --> https://osintframework.com/
 
 - [EPIOS](https://epieos.com/)
@@ -471,23 +456,16 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 - Real Esrgan --> améliore la qualité des photos
 - [ImgUpscaler](https://www.imgupscaler.com/) --> Site qui améliore la qualité
 - [Resizer.in](https://imageresizer.com/) --> Augmente/Diminue une image en gardant la qualité
-	
 - [Hama](https://www.hama.app/) --> Efface une personne ou un objet sur une image
-
 - [Pixel]([https://github.com/ORB-HD/deface](https://www.facepixelizer.com/fr/)) --> Flouter des visages
-
 - [Polarr](https://photoeditor.polarr.com/) --> Outil de retouche en ligne
-
 - Vérifier qu'il n'y a pas de ZIP dans une photo --> `binwalk -e cutie.png`
-
 - [ExifCleaner](https://exifcleaner.com/) --> Enlève les données exif
-
 - Travailler sur une photo stégano
 	- https://stegonline.georgeom.net/
 	- [aperisolve](https://www.aperisolve.com/)
 
 - Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
-
 - Enlever le background --> https://www.remove.bg/
 
 ---
@@ -500,11 +478,8 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ## Backup
 
 - Auto Archiver
-
 - [MeeroDrop](https://www.meerodrop.com/) --> Transfert de fichier jusqu'à 20 Go
-
 - Blomp --> Cloud jusqu'a 200 Go
-
 - [ufile](https://ufile.io/) --> Dépôt de fichier 5 Go
 
 ---
@@ -512,30 +487,23 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 ## Other
 
 - Barrier --> permet d'avoir plusieurs PC sur 1 PC
-
 - Locust --> Test de montée en charge
-
 - DroidCam --> Transforme le téléphone en Webcam
-
 - Automata --> Automatise des tâches Web
-	
 - Upload files --> [File IO](https://www.file.io/)
 - partage de fichier via Tor --> [OnionShare](https://github.com/onionshare/onionshare)
-
 - Find movie --> `"Titre du film" -inurl(html|htm|php|txt) intitle: index.of "last modified" (mp4|avi)`
 
 ---
 
 ## Admin Sys
+### Linux
 
-- [Server World](https://www.server-world.info/en/)
-- [Liste de documentation](https://docs.liam-le-may.fr/)
+- Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
 
 - [Crontab](https://crontab.guru/)
 
 - Obtenir l'adresse IP quand pas `ping` --> `hostname -I`
-
-- Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
 
 - VboxAdditions (mettre la VM en full écran) --> `sudo sh ./VBoxLinuxAdditions.run --nox11`
 
@@ -550,52 +518,48 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 - Trouver une machine quand on a pas son IP --> `netdiscover -r 10.0.2.0/24`
 
-- [Calcul CVSS](https://cvss.js.org/)
-
 - Modification date Linux --> `date +%T -s "10:13:13"`
 	- `timedatectl set-timezone "Europe/Paris"`
 
-- Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
-
-- Générer des tableaux --> https://www.tablesgenerator.com/ ou https://tableconvert.com/latex-generator
-
-- Schéma MD --> https://support.typora.io/Draw-Diagrams-With-Markdown/
-
-- Dévrerouiler BIOS --> https://bios-pw.org/
-
 - Tester la communication sur un port --> `echo "Papa" > /dev/tcp/127.0.0.1/80`
-
-- Faire des schémas d'arborsence en ligne --> https://tree.nathanfriend.io/
 
 - Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
 
 - Trouver les derniers fichiers écrits sur le système : `sudo find / \( -path /proc -o -path /sys \) -prune -o -type f -printf "%T@ %p\n" | sort -n | tail -n 50`
 - Voir les fichiers créer entre 2 dates avec exclusion de répertoires : `sudo find / -type f \( -newermt "2023-06-01" ! -newermt "2023-07-01" -o -newermt "2023-07-01" ! -newermt "2023-08-01" \) ! -path "/home/kali/.`
-  
+
+
+### Windows
+
 - Diagnostic PC --> https://userdiag.com/
+- Dévrerouiler BIOS --> https://bios-pw.org/
 
+### Other
+
+- [Server World](https://www.server-world.info/en/)
+- [Liste de documentation](https://docs.liam-le-may.fr/)
+  
 - Code screenshot pour présentation --> https://carbon.now.sh/
-
 - Exposer un site web gratuitement --> https://korben.info/echoduck-hebergement-sites-web-statiques-securise.html
-
+- Faire des schémas d'arborsence en ligne --> https://tree.nathanfriend.io/
+- Vérification fichier yaml --> https://onlineyamltools.com/validate-yaml
+- Générer des tableaux LATEX --> https://www.tablesgenerator.com/ ou https://tableconvert.com/latex-generator
+- Schéma MD --> https://support.typora.io/Draw-Diagrams-With-Markdown/
+- [Calcul CVSS](https://cvss.js.org/)
+  
 ---
 
 ## Hardening
 
 - Connexion clé ssh (`PAM authentification` & `password authentification no`)
 
-
 - Si on a une DMZ mettre en place un bastion (serveur qui sécurise tout ce qui a derrière)
-
 
 - Désactiver root et avoir un autre compte avec sudo (`permit root login no`)
 
-
 - Désactiver open ssl server si pas nécessaire
 
-
 - Mettre en place fail2ban
-
 
 - Avoir le firewall iptables :
 
@@ -608,7 +572,6 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 	- `iptables -P INPUT DROP`
 	  --> Tout ce qui rentre pas dans les critères on le drop
-
 
 - Mettre en place les backups
 
