@@ -420,6 +420,7 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
   	- 2ème étape (Listing des process et commandes) --> `vol.py -f “/path/to/file” windows.pstree` ou `vol.py -f “/path/to/file” windows.cmdline`
   	- 3ème étape (Listing des fichiers) --> `python3 vol.py -f ../../task.raw windows.filescan > files`
   	- 4ème étape (dump de fichiers) --> `python3 vol.py -f ../../task.raw -o ./result/ windows.dumpfiles --pid 2880`
+ - Analyse Volatility web --> https://github.com/k1nd0ne/VolWeb?tab=readme-ov-file
 
 ---
 
