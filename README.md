@@ -300,6 +300,8 @@ allow-hotplug eth0
 
 - Lister la corbeille Windows --> `$shell = New-Object -ComObject Shell.Application;$recycleBin = $shell.Namespace(0xA);$recycleBin.items() | Select-Object Name, Path`
 
+- Dézipper via powershell --> `Expand-Archive -Path python3.zip -DestinationPath .`
+
 ---
 
 ## Malware
