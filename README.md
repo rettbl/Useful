@@ -391,7 +391,6 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 - Ressources pentest AD --> https://orange-cyberdefense.github.io/ocd-mindmaps/img/pentest_ad_dark_2023_02.svg
   	- [InternalAllTheThings](https://swisskyrepo.github.io/InternalAllTheThings/)
   	- https://github.com/mranv/adPentest
-  	- 
 
 - Minmap AD pentest : https://github.com/Imp0sters/ADMR
 
