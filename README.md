@@ -253,6 +253,8 @@ allow-hotplug eth0
      address 192.168.1.2/24
      gateway 192.168.1.1
 ```
+
+- Voir les IP/port liées aux processus --> `sudo lsof -i -n -P`
        
 - Shutdown now --> `sudo shutdown -h now`
 
