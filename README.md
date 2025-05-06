@@ -166,6 +166,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
    		- Sur un port spécifique --> `Get-NetTCPConnection -State Listen -LocalPort 389`
     - Voir les ports ouverts sur une machine Linux depuis une machine Windows --> `for p in {1..65535}; do (echo >/dev/tcp/localhost/$p) >/dev/null 2>&1 && echo "$p open"; done`
 
+- Depuis une machine Linux --> `for i in $(seq 1 254); do ping -c 1 192.168.1.$i | grep "bytes from" & done`
+
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 - Voir tout les ports --> `sudo nmap -sS -p- 192.168.1.1`
