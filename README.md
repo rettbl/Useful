@@ -142,7 +142,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 	- [SHA512](https://samsclass.info/123/proj10/p12-hashcat.htm) --> `hashcat -m 1800 -a 0 -o result --remove hash /usr/share/wordlists/rockyou.txt`
  	- Apache --> `hashcat -m 1600 hash -a 0 /usr/share/wordlists/rockyou.txt`
  	- Hash Linux BCRYPT --> `hashcat -m 3200 hash /usr/share/wordlists/rockyou.txt`
- 	- Crack hash Windows NTLM --> `john --format=krb5asrep hash.txt --wordlist=/usr/share/wordlists/rockyou.txt`
+ 	- Crack hash Windows NTLMV2 --> `hashcat -m 5600 -a 0 hash /usr/share/wordlists/rockyou.txt`
 
 ---
 	
