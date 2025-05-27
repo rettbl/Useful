@@ -134,7 +134,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Crack clé RSA SSH --> `ssh2john.py secretKey > id_rsa.hash \n john --wordlist=dict.txt id_rsa.hash`
 
-- Identifier un hash avec hashcat --> `hash-identifier "067f746faca44f170c6cd9d7c4bdac6bc342c608687733f80ff784242b0b0c03"`
+- Identifier un hash avec hashcat --> `hash-identifier "067f746faca44f170c6cd9d7c4bdac6bc342c608687733f80ff784242b0b0c03"` ou `hashcat --identify hash `
 - Liste hash pour hashcat --> https://hashcat.net/wiki/doku.php?id=example_hashes
 	- Crack d'une clé SHA256 avec `hashcat` --> `hashcat -m 1420 hash --wordlist /usr/share/wordlists/rockyou.txt` (format pass:salt)
  		- Avec incrémentation --> `hashcat -m 1400 -D 1,2 -a 3 -i --increment-min 1 --increment-max 10 -1 ?l?u?d b0c83cbeff5e6e61cfc00eb4c1802289c9514d5328d718484a4eb195266e14a4 ?1?1?1?1?1?1?1?1?1`
