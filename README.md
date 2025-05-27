@@ -347,7 +347,7 @@ allow-hotplug eth0
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
   	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
   	- Récupérer tout les fichiers d'un partage --> `recurse ON;mget *`
-  	- Déposer des fichiers en SMB --> `smb> put rettbl.txt`
+  	- Déposer des fichiers en SMB --> `smb> put rettbl.txt` ou `smbclient -U 'j.fleischman%J0elTHEM4n1990!' //fluffy.htb/IT -c "put exploit.zip"`
  
 - Récupérer les comptes du domaines [kerbrute](https://github.com/ropnop/kerbrute) --> `./kerbrute_linux_amd64 userenum --dc frizzdc.frizz.htb -d frizz.htb /usr/share/wordlists/usernames.txt `
 
