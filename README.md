@@ -314,6 +314,7 @@ allow-hotplug eth0
 ### Linux
 
 - [Virus Total](https://www.virustotal.com/gui/home/upload) --> étudier un fichier
+- [Exalyze](https://exalyze.io/) --> étude fichier malware 
 
 - https://github.com/CYB3RMX/Qu1cksc0pe --> Etude fichier local
 
