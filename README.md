@@ -305,6 +305,7 @@ allow-hotplug eth0
 - MySQL powershell --> `.\mysql.exe -u MrGibbonsDB -p"MisterGibbs!Parrot!?1" -e "show databases;"`
 
 - Lister la corbeille Windows --> `$shell = New-Object -ComObject Shell.Application;$recycleBin = $shell.Namespace(0xA);$recycleBin.items() | Select-Object Name, Path`
+- Lister la corbeille AD dans l'environnement de l'utilisateur --> `Get-ADObject -filter 'isDeleted -eq $true' -includeDeletedObjects -Properties *`
 
 - Dézipper via powershell --> `Expand-Archive -Path python3.zip -DestinationPath .`
 
