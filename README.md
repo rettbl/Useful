@@ -203,6 +203,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 	- Chercher des extensions --> `dirb http://172.16.28.230/ -X .txt .php`
 - Ffuf --> `ffuf -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -ac -v -u http://172.16.28.230/FUZZ -recursion -r`
   	- Sous-domaines --> `ffuf -w /usr/share/wordlists/subdomains-top1million-5000.txt -H "Host: FUZZ.devvortex.htb" -u http://devvortex.htb -fs 154 ` ou `ffuf -c -u http://linkvortex.htb -w /usr/share/wordlists/dirb/common.txt -H "Host: FUZZ.linkvortex.htb" -fc 301`
+ 
+- Fuzzer un ID --> `ffuf -u http://file.era.htb/download.php?id=FUZZ -w ids.txt -H "Cookie: PHPSESSID=gegq3muhrjulq8fvmhkd7ckvds" -mr "Your Download Is Ready"`
 
 - Analyse repo [GIT-DUMPER](https://github.com/arthaud/git-dumper) --> `gitdumper.sh http://shop.trickster.htb/.git/ dest-dir .`
 
