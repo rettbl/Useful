@@ -146,6 +146,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
  	- Apache --> `hashcat -m 1600 hash -a 0 /usr/share/wordlists/rockyou.txt`
  	- Hash Linux BCRYPT --> `hashcat -m 3200 hash /usr/share/wordlists/rockyou.txt`
  	- Crack hash Windows NTLMV2 --> `hashcat -m 5600 -a 0 hash /usr/share/wordlists/rockyou.txt`
+    - Crack hash Windows Kerberos --> `hashcat -m 13100 hash /usr/share/wordlists/rockyou.txt`
 
 ---
 	
