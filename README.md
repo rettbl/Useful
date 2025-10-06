@@ -442,6 +442,7 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 
 ## OSINT
 
+- |OsintRocks](https://osint.rocks/) --> regroupement d'outils OSINT
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
 - [NexFil](https://github.com/thewhiteh4t/nexfil) --> Trouve les réseaux sociaux d'une personne
 - [29a](https://29a.ch/photo-forensics) --> Analyse de photo forensics
