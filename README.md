@@ -2,6 +2,11 @@
 
 > Le but de ce document est de regrouper les différents informations à propos de l'IT dans un seul repository accessible de partout
 
+> IMPORTANT — LÉGALITÉ & USAGE
+> - Contenu potentiellement dangereux : n'exécutez aucune commande ni payload en dehors d'un environnement contrôlé (VM, labo, CTF autorisé).
+> - Toute utilisation malveillante est de la responsabilité de l'utilisateur.
+> - Si vous partagez ce dépôt publiquement, pensez à déplacer les payloads/exploits sensibles dans un repo privé.
+
 ---
 
 ## CTF
