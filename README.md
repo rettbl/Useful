@@ -423,6 +423,24 @@ SQL (sophie  dbo@master)> EXEC xp_cmdshell 'whoami';
 - Avoir les informations sur l'utillisateur Windows --> `net user` ou `whoami /priv`
   	- Récupérer plus d'informations --> `net user MONUSER /domain`
   	- Connaître les membres d'un groupe --> `net group IT /domain`
+  	- Observer les droits du groupe -->
+ ```powershell
+# Voir RAPIDEMENT les droits dangereux du groupe IT
+$itGroup = Get-ADGroup -Identity "IT"
+
+Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
+    $acl = Get-Acl "AD:\$($_.DistinguishedName)" -ErrorAction SilentlyContinue
+    $acl.Access | Where-Object {
+        $_.IdentityReference -like "*IT*" -and 
+        ($_.ActiveDirectoryRights -match "GenericAll|GenericWrite|CreateChild|WriteDacl|Modify")
+    } | ForEach-Object {
+        [PSCustomObject]@{
+            Object = $_.Name
+            Droit = $_.ActiveDirectoryRights
+        }
+    }
+} | Group-Object Droit | Select-Object Name, @{Name="Count";Expression={$_.Count}}
+```
 
 - Mimikatz --> `mimikatz # lsadump::sam`
 
