@@ -483,6 +483,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
   	- 4ème étape (dump de fichiers) --> `python3 vol.py -f ../../task.raw -o ./result/ windows.dumpfiles --pid 2880`
  - Analyse Volatility web --> https://github.com/k1nd0ne/VolWeb?tab=readme-ov-file
 
+- Deobfuscator javascript --> https://lelinhtinh.github.io/de4js/
+
 ---
 
 ## OSINT
