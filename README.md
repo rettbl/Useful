@@ -489,6 +489,7 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 
 ## OSINT
 
+- [WebChecl](https://web-check.xyz/) --> Analyse site web
 - [OsintRocks](https://osint.rocks/) --> regroupement d'outils OSINT - USERNAME, MAIL, PHONE, DOMAIN/IP
 - [Script G-Hunt](https://github.com/mxrch/GHunt) --> Rassemble les informations à partir d'une adresse mail google
 - [NexFil](https://github.com/thewhiteh4t/nexfil) --> Trouve les réseaux sociaux d'une personne
