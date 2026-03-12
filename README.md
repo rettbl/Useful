@@ -218,6 +218,8 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - WAF --> `wafw00f http://rainbowstore2.chall.malicecyber.com/ `
 
+- SNMP --> `snmpwalk -v 1 -c public IP`
+
 #### Directory
 
 - Gobuster --> `gobuster dir -u http://10.10.96.122 -w /usr/share/wordlists/dirb/common.txt`
