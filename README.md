@@ -586,6 +586,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 
 - Stopper tout les docker en même temps --> `sudo docker stop $(sudo docker ps -aq)`
 
+- Rcupérer les variables d'environnement Docker --> `cat /proc/1/environ | tr '\0' '\n'`
+
 - Comment savoir que nous sommes dans un docker ? --> Vérifier le fichier `/etc/hosts` + dans le `/ présence de .dockerenv`
 
 - Trouver les derniers fichiers écrits sur le système : `sudo find / \( -path /proc -o -path /sys \) -prune -o -type f -printf "%T@ %p\n" | sort -n | tail -n 50`
