@@ -316,6 +316,8 @@ allow-hotplug eth0
 
 - `dir C:\*.ova /S | more` --> Recherche dans le système un fichier .ova
 
+- Trouver les fichiers avec un nom --> `Get-ChildItem -Recurse -Filter "*element*"`
+
 - `netstat -anpe` --> Tout les flux actifs actutellement
 
 - `powercfg /batteryreport` --> Sort un rapport sur l'état de la batterie (à faire en powershell)
