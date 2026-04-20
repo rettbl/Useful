@@ -531,6 +531,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 - Enlever les watermarks --> https://www.watermarkremover.io/fr/upload
 - Enlever le background --> https://www.remove.bg/
 
+- Avoir des logos en libre accès de bonne qualité --> `https://selfh.st/icons/`
+
 ---
 
 ## Dessin
