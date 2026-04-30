@@ -207,6 +207,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Depuis une machine Linux :
   	- Voir les machines actives --> `nc -zv 172.17.0.2 1-10000 2>&1 | grep -v "Connection refused"`
+  	- Voir si le port est ouvert --> `proxychains nc -zv 10.70.5.2 443`
 
 - Wordpress --> `wpscan --url www.mokoil.com`
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
