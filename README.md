@@ -296,7 +296,7 @@ allow-hotplug eth0
 
 - Clear history --> `history -c`
 
-- Récupérer les fichiers d'unn dossiers sur Internet : `wget -r -np -nH --cut-dirs=2 https://archive.apache.org/dist/tomcat/tomcat-6/`
+- Récupérer les fichiers d'un dossiers sur Internet : `wget -r -np -nH --cut-dirs=2 https://archive.apache.org/dist/tomcat/tomcat-6/`
 
 - Persistence Linux --> https://hadess.io/the-art-of-linux-persistence/
 
@@ -566,6 +566,7 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 ### Linux
 
 - Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
+- Lister le dernier fichier écrits dans un répertoire --> `ls -t | head -n 1`
 
 - [Crontab](https://crontab.guru/)
 
