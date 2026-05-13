@@ -566,7 +566,7 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 ### Linux
 
 - Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
-- Lister le dernier fichier écrits dans un répertoire --> `ls -t | head -n 1`
+- Lister le dernier fichier écrits dans un répertoire --> `ls -tR | head -n 1`
 
 - [Crontab](https://crontab.guru/)
 
