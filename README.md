@@ -190,7 +190,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 
 - Depuis une machine Windows : 
 	- Voir les machines actives --> `for i in {1..254} ;do (ping 172.16.1.$i -c 1 -w 5  >/dev/null && echo "172.16.1.$i" &) ;done` ou ` 1..254 | % {"172.16.2.$($_): $(Test-Connection -count 1 -comp 172.16.2.$($_) -quiet)"}`
-   	- Voir les ports ouverts sur une machine Windows --> `1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("192.168.1.1",$_)) "Port $_ is open!"} 2>$null`
+   	- Voir les ports ouverts sur une machine Windows --> `1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("192.168.1.1",$_)) "Port $_ is open!"} 2>$null` ou `powershell -c "$ports=@(22,80,443,445,1433,3389,5985,873); $ip='192.168.25.1'; foreach($p in $ports){ $tcp=New-Object Net.Sockets.TcpClient; try{ $tcp.Connect($ip,$p); Write-Host \"$ip`:$p OPEN\" }catch{} }"`
    	- Voir les ports ouverts en local --> `Get-NetTCPConnection` + `netstat -an | findstr LISTENING`
    		- Sur un port spécifique --> `Get-NetTCPConnection -State Listen -LocalPort 389`
     - Voir les ports ouverts sur une machine Linux depuis une machine Windows --> `for p in {1..65535}; do (echo >/dev/tcp/localhost/$p) >/dev/null 2>&1 && echo "$p open"; done`
