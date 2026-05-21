@@ -380,6 +380,8 @@ allow-hotplug eth0
 
 ### Active Directory - AD
 
+- RSYNC --> `shell C:\_admin\cwrsync\bin\rsync.exe rsync://192.168.25.1`
+
 - Samba (connexion FTP like) --> `smbclient -L \\10.129.118.175`
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
