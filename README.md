@@ -572,6 +572,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 ### Linux
 
 - Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
+- Nettoyer en place un Linux :
+	- `sudo apt clean && sudo apt autoremove --purge && sudo dpkg -P $(dpkg -l | awk '$1~/^rc$/{print $2}') && rm -r -f ~/.local/share/Trash/*/*`
 - Lister le dernier fichier écrits dans un répertoire --> `ls -tR | head -n 1`
 
 - [Crontab](https://crontab.guru/)
