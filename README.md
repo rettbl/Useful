@@ -571,6 +571,9 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 ## Admin Sys
 ### Linux
 
+- Lister les fichiers par date --> `ls -ltr`
+  	- Supprimer les 50 dossiers les plus anciens --> `ls -d */ -1 --time-style=+%s | sort -n | head -n 50 | xargs -I {} rm -rf "{}"`
+
 - Lister les fichiers volumineux d'un répertoire --> `du -ah MSI/ | sort -rh | head -n 10`
 - Nettoyer en place un Linux :
 	- `sudo apt clean && sudo apt autoremove --purge && sudo dpkg -P $(dpkg -l | awk '$1~/^rc$/{print $2}') && rm -r -f ~/.local/share/Trash/*/*`
