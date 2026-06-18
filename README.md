@@ -390,6 +390,7 @@ allow-hotplug eth0
   	- Connexion à un répertoire --> `smbclient -N \\\\10.129.197.116\\backups`
   	- Lister les répertoires avec des identifiants --> `crackmapexec smb 10.10.110.3 -u 'mrb3n' -p 'W3lc0me123!!!' --shares`
   	- Accèder à un répertoires avec des identifiants --> `smbclient -U 'mrb3n%W3lc0me123!!!' //10.10.110.3/Backups`
+  	  	- Avec un hash --> `mbclient //checkpoint.htb/VMBackups -U 'checkpoint.htb/svc_deploy%e16081eb077aca74bdbf8af12af43ac9' --pw-nt-hash`
   	- Récupérer tout les fichiers d'un partage --> `recurse ON;mget *`
   	- Déposer des fichiers en SMB --> `smb> put rettbl.txt` ou `smbclient -U 'j.fleischman%J0elTHEM4n1990!' //fluffy.htb/IT -c "put exploit.zip"`
  
