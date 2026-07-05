@@ -217,6 +217,7 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 	- En mode agressif --> `wpscan --url www.mokoil.com -e vp,vt,u`
 	- Faire un brute-force sur les mots de passe --> `wpscan --url http://<target-IP>/ --passwords wordlist.txt --usernames victor`
 	- Brute force sur les plugins --> `wpscan --url http://10.10.110.119 --plugins-detection mixed -t 30 -e vp,vt,u`
+	- Sur un HTTPS sans certificat --> `wpscan --url https://makesense.htb -e vp,vt,u --disable-tls-checks`
 
 - [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 - [PSpy](https://github.com/DominicBreuker/pspy)
