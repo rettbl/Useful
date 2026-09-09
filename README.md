@@ -201,6 +201,18 @@ john zip.hashes` ou `fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt secret_
 - Depuis une machine Linux --> `for i in $(seq 1 254); do ping -c 1 192.168.1.$i | grep "bytes from" & done`
 	- Voir les en local sur une machine Linux --> `ss -laputen` + `ss -tlnp`
 
+ - Reconnaissance des ports via Python -->
+```python
+python3 - <<'EOF'
+import socket
+
+for p in [22,80,3000,5000,8000,8080,9000]:
+    s=socket.socket(); s.settimeout(0.6)
+    if s.connect_ex(("172.17.0.1",p))==0: print("OPEN",p)
+    s.close()
+EOF
+```
+
 - Voir les ports ouverts --> `nmap -Pn 192.168.1.1`
 - Voir la version des services --> `nmap -sV -sC 192.168.1.1`
 - Voir tout les ports --> `sudo nmap -sS -p- 192.168.1.1`
