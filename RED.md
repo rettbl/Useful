@@ -16,4 +16,5 @@
 
 
 ### Ressources
-- https://xbz0n.sh/blog/living-off-the-land-windows
+- https://xbz0n.sh/blog/living-off-the-land-windows --> Binaires légitimes Windows
+- https://redteam.guide/ --> Dictionnaire red team
