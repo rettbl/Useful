@@ -267,8 +267,8 @@ EOF
 
 - `kali-undercover` --> transforme le GUI en Windows
 
-- `last` --> dernière connexion
-- `lastb` --> dernière connexion qui à échoué
+- `lslogins -L` (old = `last`) --> dernière connexion
+- `lslogins -f` (old =`lastb` --> dernière connexion qui à échoué
 
 - `find / -name XXX 2>/dev/null` --> trouver un fichier dans le système
 - `grep -inr ".env" /home/user` --> trouver un mot à l'intérieur des fichiers
