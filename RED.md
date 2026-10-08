@@ -12,7 +12,9 @@
 
 - Lister les utilisateurs locaux --> `powershell Get-LocalUser | Select-Object Name, Enabled, LastLogon, PasswordLastSet`
 - Membres du groupes administrateurs local --> `powershell Get-LocalGroupMember -Group "Administrators"`
-- Quel est l'adresse IP du DC ? --> `powershell Get-ADDomainController -Filter * | Select-Object Name, IPv4Address, Site`
+- Quel est l'adresse IP du DC ? -->
+    - `powershell Get-ADDomainController -Filter * | Select-Object Name, IPv4Address, Site`
+    - `powershell Resolve-DnsName $env:USERDNSDOMAIN`
 
 
 ### Ressources
