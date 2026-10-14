@@ -271,7 +271,7 @@ EOF
 - `lslogins -f` (old =`lastb` --> dernière connexion qui à échoué
 
 - `find / -name XXX 2>/dev/null` --> trouver un fichier dans le système
-- `grep -inr ".env" /home/user` --> trouver un mot à l'intérieur des fichiers
+- `grep -w ".env" /home/user` --> trouver un mot à l'intérieur des fichiers
 
 - Trouver des mots de passe dans un répertoire --> `grep -arin -o -E '(\w+\W+){0,5}password(\W+\w+){0,5}' .`
 
