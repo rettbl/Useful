@@ -305,7 +305,7 @@ network:
 
 ```bash=
 iface eth0 inet static
-allow-hotplug eth0
+	 allow eth0
      address 192.168.1.2/24
      gateway 192.168.1.1
 ```
