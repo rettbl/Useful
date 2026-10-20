@@ -15,8 +15,11 @@
 - Quel est l'adresse IP du DC ? -->
     - `powershell Get-ADDomainController -Filter * | Select-Object Name, IPv4Address, Site`
     - `powershell Resolve-DnsName $env:USERDNSDOMAIN`
+ 
+## Linux
 
+- Retirer l'historique --> `unset HISTFILE`
 
-### Ressources
+## Ressources
 - https://xbz0n.sh/blog/living-off-the-land-windows --> Binaires légitimes Windows
 - https://redteam.guide/ --> Dictionnaire red team
