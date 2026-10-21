@@ -304,6 +304,7 @@ network:
 - Mettre une adresse IP statique Debian --> `/etc/network/interfaces` :
 
 ```bash=
+auto eth0
 iface eth0 inet static
 	 allow eth0
      address 192.168.1.2/24
