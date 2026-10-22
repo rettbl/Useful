@@ -309,6 +309,7 @@ iface eth0 inet static
 	 allow eth0
      address 192.168.1.2/24
      gateway 192.168.1.1
+	 dns-nameservers 8.8.8.8
 ```
 
 - Voir les IP/port liées aux processus --> `sudo lsof -i -n -P`
