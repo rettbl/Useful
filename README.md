@@ -639,6 +639,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 
 - Connexion RDP depuis une machine Linux --> `xfreerdp /v:<IP_WINDOWS> /u:<nom_utilisateur> /p:<mot_de_passe> /cert:ignore`
   	- Remmina --> GUI XFREERDP
+ 
+- Chnager le clavier via powershell --> `Set-WinUserLanguageList -LanguageList fr-FR`
 
 ### Other
 
