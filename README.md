@@ -637,7 +637,8 @@ Get-ADObject -Filter * -Properties nTSecurityDescriptor | ForEach-Object {
 - Dévrerouiler BIOS --> https://bios-pw.org/
 - Test PC (tronScript) --> [Tron](https://www.reddit.com/r/TronScript/wiki/downloads/)
 
-- Connexion RDP depuis une machine Windows --> `xfreerdp /v:<IP_WINDOWS> /u:<nom_utilisateur> /p:<mot_de_passe> /cert:ignore`
+- Connexion RDP depuis une machine Linux --> `xfreerdp /v:<IP_WINDOWS> /u:<nom_utilisateur> /p:<mot_de_passe> /cert:ignore`
+  	- Remmina --> GUI XFREERDP
 
 ### Other
 
